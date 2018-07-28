@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	480525699	startFlames			\Default Work Unit\FX\startFlames	
+	4117621049	stopFlames			\Default Work Unit\FX\stopFlames	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	781251886	Flames	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\Flames_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\FX\Flames		1962592
+

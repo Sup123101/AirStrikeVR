@@ -1,0 +1,36 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1146369487	startStarPEngine			\Default Work Unit\playerEngine\startStarPEngine	
+	1462390100	startModernPEngine			\Default Work Unit\playerEngine\startModernPEngine	
+	2473397641	stopPEngine			\Default Work Unit\playerEngine\stopPEngine	
+	3750477901	startClassicPEngine			\Default Work Unit\playerEngine\startClassicPEngine	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	269384475	Classic			\Default Work Unit\Classic	
+	984082288	Modern			\Default Work Unit\Modern	
+	2253065552	starFighter			\Default Work Unit\starFighter	
+
+State	ID	Name	State Group			Notes
+	0	None	Classic			
+	1778882555	accel	Classic			
+	3089792801	deccel	Classic			
+	0	None	Modern			
+	1778882555	accel	Modern			
+	3089792801	deccel	Modern			
+	0	None	starFighter			
+	1778882555	accel	starFighter			
+	3089792801	deccel	starFighter			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	16283810	starhighSpeedLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\starhighSpeedLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\playerEngine\starFighter\highSpeed\starhighSpeedLoop		391056
+	50158974	moderHighSpeedLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\moderHighSpeedLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\playerEngine\Modern\highSpeed\moderHighSpeedLoop		441144
+	246546007	starnormalLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\starnormalLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\playerEngine\starFighter\normalSpeed\starnormalLoop		435148
+	349238628	starSlowDown	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\starSlowDown_66D346E0.wem		\Actor-Mixer Hierarchy\Default Work Unit\playerEngine\starFighter\normalSpeed\starSlowDown		94044
+	442376208	classicslowDown	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\classicslowDown_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\playerEngine\Classic\normalSpeed\classicslowDown		294148
+	460638834	classichighSpeedLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\classichighSpeedLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\playerEngine\Classic\highSpeed\classichighSpeedLoop		544044
+	471881994	modernSlowDown	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\modernSlowDown_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\playerEngine\Modern\normalSpeed\modernSlowDown		463192
+	647999113	starSpeedUp	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\starSpeedUp_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\playerEngine\starFighter\highSpeed\starSpeedUp		198592
+	659391842	classicspeedUp	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\classicspeedUp_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\playerEngine\Classic\highSpeed\classicspeedUp		414768
+	950187301	classicnormalLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\classicnormalLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\playerEngine\Classic\normalSpeed\classicnormalLoop		434436
+	1035854733	normalLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\normalLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\playerEngine\Modern\normalSpeed\normalLoop		419092
+	1048085161	modernSpeedUp	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\modernSpeedUp_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\playerEngine\Modern\highSpeed\modernSpeedUp		749840
+

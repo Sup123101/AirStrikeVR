@@ -1,0 +1,22 @@
+Event	ID	Name			Wwise Object Path	Notes
+	36280251	lockOn			\Default Work Unit\Alerts\lockOn	
+	925126984	stopStarAlarm			\Default Work Unit\Alerts\stopStarAlarm	
+	2106207540	startEngineSputter			\Default Work Unit\Alerts\startEngineSputter	
+	2291740791	stopModernAlarm			\Default Work Unit\Alerts\stopModernAlarm	
+	2717762458	startStarAlarm			\Default Work Unit\Alerts\startStarAlarm	
+	2889330237	startModernAlarm			\Default Work Unit\Alerts\startModernAlarm	
+	2930916137	playSirenAlarm			\Default Work Unit\Alerts\playSirenAlarm	
+	3339837753	weaponChange			\Default Work Unit\Alerts\weaponChange	
+	3403829859	stopLockOn			\Default Work Unit\Alerts\stopLockOn	
+	3710927879	stopSirenAlarm			\Default Work Unit\Alerts\stopSirenAlarm	
+	4092298202	stopEngineSputter			\Default Work Unit\Alerts\stopEngineSputter	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	61965359	modernEvacuate	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\modernEvacuate_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alerts\modernEvacuate		408804
+	87459436	starFighterlowHP	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\starFighterlowHP_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alerts\starFighterlowHP		595492
+	184239255	weaponSwitch	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\weaponSwitch_EC35753D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alerts\weaponSwitch		176404
+	192512106	EngineSputter	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\EngineSputter_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alerts\EngineSputter		970344
+	306576491	lockOnStart	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\lockOnStart_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alerts\Alert\lockOnStart		135944
+	616401202	raidSiren	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\raidSiren_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alerts\raidSiren		1598768
+	1057588654	lockOnLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\lockOnLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alerts\Alert\lockOnLoop		176544
+

@@ -1,0 +1,48 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	269384475	Classic			\Default Work Unit\Classic	
+	984082288	Modern			\Default Work Unit\Modern	
+	2253065552	starFighter			\Default Work Unit\starFighter	
+	3235954734	View			\Default Work Unit\View	
+
+State	ID	Name	State Group			Notes
+	0	None	Classic			
+	1778882555	accel	Classic			
+	3089792801	deccel	Classic			
+	0	None	Modern			
+	1778882555	accel	Modern			
+	3089792801	deccel	Modern			
+	0	None	starFighter			
+	1778882555	accel	starFighter			
+	3089792801	deccel	starFighter			
+	0	None	View			
+	438105790	Outside	View			
+	1444839120	Cockpit	View			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	112750970	Cockpit	View	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\playerEngine		
+	260395234	Cockpit	View	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Impacts		
+	307941806	Cockpit	View	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Weapons		
+	358267488	Cockpit	View	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Explosions		
+	398242155	Cockpit	View	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\FX		
+	898733376	Cockpit	View	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\botEngine		
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	580025197	radioChatter			\Default Work Unit\Master Audio Bus\radioChatter	
+	753483701	Explosions			\Default Work Unit\Master Audio Bus\Explosions	
+	852736692	playerEngine			\Default Work Unit\Master Audio Bus\playerEngine	
+	986855776	Alerts			\Default Work Unit\Master Audio Bus\Alerts	
+	1316910230	Impacts			\Default Work Unit\Master Audio Bus\Impacts	
+	1467963052	Weapons			\Default Work Unit\Master Audio Bus\Weapons	
+	1534528554	VA			\Default Work Unit\Master Audio Bus\VA	
+	1802970371	FX			\Default Work Unit\Master Audio Bus\FX	
+	3249548410	botEngine			\Default Work Unit\Master Audio Bus\botEngine	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2080872166	Brick_Wall_Minus_6dB_Peak_Fast_Release	Wwise Peak Limiter			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

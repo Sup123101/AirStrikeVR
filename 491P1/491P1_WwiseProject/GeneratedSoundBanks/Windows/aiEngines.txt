@@ -1,0 +1,24 @@
+Event	ID	Name			Wwise Object Path	Notes
+	272552693	stopStarEnemyEngine			\Default Work Unit\AIEngines\stopStarEnemyEngine	
+	369208719	startWW2Engine			\Default Work Unit\AIEngines\startWW2Engine	
+	920968951	stopStarLowHPEngine			\Default Work Unit\AIEngines\stopStarLowHPEngine	
+	1071708526	stopModernEngine			\Default Work Unit\AIEngines\stopModernEngine	
+	1909154112	startModernEngine			\Default Work Unit\AIEngines\startModernEngine	
+	3769342143	startStarAllyEngine			\Default Work Unit\AIEngines\startStarAllyEngine	
+	3909231409	startStarLowHPEngine			\Default Work Unit\AIEngines\startStarLowHPEngine	
+	3970229609	stopWW2Engine			\Default Work Unit\AIEngines\stopWW2Engine	
+	4015933481	stopStarAllyEngine			\Default Work Unit\AIEngines\stopStarAllyEngine	
+	4050874075	startStarEnemyEngine			\Default Work Unit\AIEngines\startStarEnemyEngine	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1467825012	modernDoppler			\Default Work Unit\Engines\modernDoppler	
+	2010691057	classicDoppler			\Default Work Unit\Engines\classicDoppler	
+	4039399636	starFighterDoppler			\Default Work Unit\Engines\starFighterDoppler	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	68286664	enemyStarFighterLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\enemyStarFighterLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\botEngine\enemyStarFighterLoop		617544
+	670451082	modernEngineLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\modernEngineLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\botEngine\modernEngineLoop		573444
+	678784050	WW2EngineLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\WW2EngineLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\botEngine\WW2EngineLoop		529344
+	901463121	friendlyStarFighterLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\friendlyStarFighterLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\botEngine\friendlyStarFighterLoop		391056
+	1021607394	enemyStarFighterlowHP	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\enemyStarFighterlowHP_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\botEngine\enemyStarFighterlowHP		595492
+

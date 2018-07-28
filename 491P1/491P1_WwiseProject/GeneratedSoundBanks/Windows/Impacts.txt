@@ -1,0 +1,21 @@
+Event	ID	Name			Wwise Object Path	Notes
+	730234386	metalBullet			\Default Work Unit\Impacts\metalBullet	
+	1915059747	sandBullet			\Default Work Unit\Impacts\sandBullet	
+	2387391939	metalSear			\Default Work Unit\Impacts\metalSear	
+	3381906398	sandSear			\Default Work Unit\Impacts\sandSear	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	10769277	metalSear_02	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\metalSear_02_6377B1FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\metalSear\metalSear_02		266152
+	253379395	sandSear_02	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\sandSear_02_0E77B3E6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\sandSear\sandSear_02		319860
+	325443002	MetalHit3	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\MetalHit3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\Metal\MetalHit3		42500
+	344277745	sandSear_01	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\sandSear_01_7353C1A3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\sandSear\sandSear_01		344056
+	522475909	sandBullet_04	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\sandBullet_04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\Sand\sandBullet_04		186060
+	592069702	sandBullet_03	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\sandBullet_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\Sand\sandBullet_03		165520
+	630939987	sandBullet_02	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\sandBullet_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\Sand\sandBullet_02		130772
+	688253071	MetalHit2	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\MetalHit2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\Metal\MetalHit2		42500
+	824591215	MetalHit1	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\MetalHit1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\Metal\MetalHit1		42500
+	866795515	metalSear_01	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\metalSear_01_61954776.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\metalSear\metalSear_01		339364
+	985668054	metalSear_03	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\metalSear_03_B0C00FA2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\metalSear\metalSear_03		222916
+	988056856	sandSear_03	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\sandSear_03_625BB8D2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\sandSear\sandSear_03		419216
+	1050266739	sandBullet_01	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\sandBullet_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\Sand\sandBullet_01		117744
+

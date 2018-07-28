@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6C9585EF-1C25-4816-B127-2AE897528D6B}" SchemaVersion="85">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{6C9585EF-1C25-4816-B127-2AE897528D6B}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Classic" ID="{FF2A8929-118C-4635-8C0B-7BE7A85E4A6B}">
+					<ChildrenList>
+						<State Name="None" ID="{586589C3-38F0-405A-9554-27B6DD427180}"/>
+						<State Name="accel" ID="{5B956933-26AA-40FE-80E3-4C288CAAAE4F}"/>
+						<State Name="deccel" ID="{92F96D9E-3C46-48FB-B976-0A787DD4C5C7}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Modern" ID="{F4C0FFF4-67E9-4A3B-A56F-E07432E9878E}">
+					<ChildrenList>
+						<State Name="None" ID="{05FC1F3C-1BF5-4C00-940D-D43E1CED01E9}"/>
+						<State Name="accel" ID="{12FE03A5-3A5D-4A93-9DCD-2B1B271D8F3A}"/>
+						<State Name="deccel" ID="{8FBBD4B1-1BB2-4C88-BBA2-771FD8599EB7}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="starFighter" ID="{FADDD792-6A30-450C-AF52-5546009A8676}">
+					<ChildrenList>
+						<State Name="None" ID="{91042330-6FAB-4608-82A0-EB03639F347F}"/>
+						<State Name="accel" ID="{EE986A59-0373-4AE9-A942-66734B540437}"/>
+						<State Name="deccel" ID="{CEE722BB-7070-432B-9E31-C0C7AE55D41C}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="View" ID="{69E9E414-0F03-4106-AC3D-A85214AC2818}">
+					<ChildrenList>
+						<State Name="None" ID="{7FC68309-D33C-41C2-A381-539669EEBAC5}"/>
+						<State Name="Cockpit" ID="{BCD9C9D6-7233-43D4-BB78-A7A619C57B58}"/>
+						<State Name="Outside" ID="{66BA08DF-5941-4C96-8458-9C1BC4C6006A}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

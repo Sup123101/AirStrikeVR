@@ -1,0 +1,25 @@
+Event	ID	Name			Wwise Object Path	Notes
+	63450460	FXExplosion			\Default Work Unit\Explosions\FXExplosion	
+	870974975	metalExplosion			\Default Work Unit\Explosions\metalExplosion	
+	1295429296	flakExplosion			\Default Work Unit\Explosions\flakExplosion	
+	1702134784	sandExplosion			\Default Work Unit\Explosions\sandExplosion	
+	3349451189	normalExplosion			\Default Work Unit\Explosions\normalExplosion	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	805435	Explosion_02	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\Explosion_02_FC552E21.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\FXexplosion\Explosion_02		643644
+	34444945	Explosion_01	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\Explosion_01_9E97DB7B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\FXexplosion\Explosion_01		433796
+	101869958	sandExplosion_03	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\sandExplosion_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\Sand\sandExplosion_03		596876
+	106490643	Explosion_03	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\Explosion_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\Normal\Explosion_03		703816
+	241170414	Explosion_01	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\Explosion_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\Normal\Explosion_01		433796
+	241938170	Explosion_03	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\Explosion_03_11F4B4BF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\FXexplosion\Explosion_03		703816
+	324887684	metalExplosion_02	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\metalExplosion_02_BC82E331.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\Metal\metalExplosion_02		490024
+	390717481	metalExplosion_04	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\metalExplosion_04_6EABD5A5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\Metal\metalExplosion_04		503712
+	409699218	flakExplosion_01	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\flakExplosion_01_68EA10C3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\Flak\flakExplosion_01		617544
+	510195601	sandExplosion_02	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\sandExplosion_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\Sand\sandExplosion_02		599724
+	531275606	Explosion_02	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\Explosion_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\Normal\Explosion_02		643644
+	532973246	metalExplosion_01	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\metalExplosion_01_6C1C82F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\Metal\metalExplosion_01		482216
+	599634381	sandExplosion_01	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\sandExplosion_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\Sand\sandExplosion_01		577564
+	766503413	metalExplosion_03	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\metalExplosion_03_59EED792.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\Metal\metalExplosion_03		461176
+	891137738	flakExplosion_02	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\flakExplosion_02_A10A2F86.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\Flak\flakExplosion_02		541776
+	1054171988	flakExplosion_03	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\flakExplosion_03_E99D4C8F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosions\Flak\flakExplosion_03		499944
+

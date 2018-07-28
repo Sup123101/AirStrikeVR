@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{217100B1-47DB-4081-83B8-C119AAF0C8C0}" SchemaVersion="85">
+	<Triggers>
+		<WorkUnit Name="Default Work Unit" ID="{217100B1-47DB-4081-83B8-C119AAF0C8C0}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="classicStinger" ID="{1D04CECC-7A60-43AD-A754-9A0B56867BE2}"/>
+				<Trigger Name="modernStinger" ID="{419C7125-5507-4B14-AB01-51300DCB8ED0}"/>
+				<Trigger Name="starStinger" ID="{4DB7B290-2B29-4B66-BF79-FF2DBD09D23B}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Triggers>
+</WwiseDocument>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}" SchemaVersion="85">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{6E45B4EF-D09E-4C6E-9F06-0C542B9E1118}" WorkUnitID="{3913C16D-B34C-49D8-B63D-87B01F28BF70}"/>
+						</Reference>
+						<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+							<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="botEngine" ID="{224016E3-D2B6-44E8-886C-62A902A0F120}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="View" ID="{69E9E414-0F03-4106-AC3D-A85214AC2818}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Cockpit" ID="{BCD9C9D6-7233-43D4-BB78-A7A619C57B58}"/>
+										<State Name="" ID="{7AB7E76D-6C08-4C9B-8E96-56A734012E30}" ShortID="898733376">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="24"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Outside" ID="{66BA08DF-5941-4C96-8458-9C1BC4C6006A}"/>
+										<State Name="" ID="{C1E32CFE-A944-40A2-9CAA-CF52A936BAA1}" ShortID="1019631768"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</Bus>
+						<Bus Name="Explosions" ID="{29E14FB0-7BED-404D-BBE5-CF2552B3D813}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="View" ID="{69E9E414-0F03-4106-AC3D-A85214AC2818}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Cockpit" ID="{BCD9C9D6-7233-43D4-BB78-A7A619C57B58}"/>
+										<State Name="" ID="{B2FF375B-6A48-4CDF-9EDC-1AF16610E48A}" ShortID="358267488">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="24"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Outside" ID="{66BA08DF-5941-4C96-8458-9C1BC4C6006A}"/>
+										<State Name="" ID="{0F056420-EBF6-4885-A284-12DFA36E3B5D}" ShortID="592254032"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</Bus>
+						<Bus Name="Alerts" ID="{6A8E2487-BF75-4DBF-95E5-B4DB0E025ACC}"/>
+						<Bus Name="Music" ID="{DCA561A2-7528-4645-8610-D75BA5E486C6}"/>
+						<Bus Name="Impacts" ID="{21592AE9-A3E3-49DA-B9E5-7254DD2BDE79}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="View" ID="{69E9E414-0F03-4106-AC3D-A85214AC2818}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Cockpit" ID="{BCD9C9D6-7233-43D4-BB78-A7A619C57B58}"/>
+										<State Name="" ID="{FFA53741-1E24-4F80-8436-C9C30D410619}" ShortID="260395234">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="24"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Outside" ID="{66BA08DF-5941-4C96-8458-9C1BC4C6006A}"/>
+										<State Name="" ID="{6A963928-CAA2-4E97-977E-6DD6FBC65B12}" ShortID="222333228"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</Bus>
+						<Bus Name="playerEngine" ID="{674729E1-E03C-4544-B3BF-B938D0A62C55}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="View" ID="{69E9E414-0F03-4106-AC3D-A85214AC2818}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Cockpit" ID="{BCD9C9D6-7233-43D4-BB78-A7A619C57B58}"/>
+										<State Name="" ID="{BBFAB50F-CE21-4459-ADB7-9A100BC55E75}" ShortID="112750970">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="24"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Outside" ID="{66BA08DF-5941-4C96-8458-9C1BC4C6006A}"/>
+										<State Name="" ID="{F04B055B-3332-4D09-81BB-3C6976AE7FA9}" ShortID="332086094"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</Bus>
+						<Bus Name="radioChatter" ID="{1A29A83E-3089-44DB-8006-499BCA000885}"/>
+						<Bus Name="VA" ID="{66D4C945-E6BA-47EB-8D11-388A60484C0A}">
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="botEngine" ID="{224016E3-D2B6-44E8-886C-62A902A0F120}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+								<DuckItem>
+									<BusRef Name="Explosions" ID="{29E14FB0-7BED-404D-BBE5-CF2552B3D813}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+								<DuckItem>
+									<BusRef Name="FX" ID="{D16C8B36-6EF8-4D2B-8B5F-EEE8A383E8A0}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+								<DuckItem>
+									<BusRef Name="Impacts" ID="{21592AE9-A3E3-49DA-B9E5-7254DD2BDE79}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+								<DuckItem>
+									<BusRef Name="Weapons" ID="{CDD754E6-FF3F-445F-B70B-FA7AC22A17C0}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+								<DuckItem>
+									<BusRef Name="playerEngine" ID="{674729E1-E03C-4544-B3BF-B938D0A62C55}"/>
+									<DuckingParam>
+										<Volume>-4</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+								<DuckItem>
+									<BusRef Name="Music" ID="{DCA561A2-7528-4645-8610-D75BA5E486C6}"/>
+									<DuckingParam>
+										<Volume>-3</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
+						<Bus Name="Weapons" ID="{CDD754E6-FF3F-445F-B70B-FA7AC22A17C0}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="View" ID="{69E9E414-0F03-4106-AC3D-A85214AC2818}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Cockpit" ID="{BCD9C9D6-7233-43D4-BB78-A7A619C57B58}"/>
+										<State Name="" ID="{FDF3B61A-E2F8-4467-8CD9-997EF81E3FDE}" ShortID="307941806">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="24"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Outside" ID="{66BA08DF-5941-4C96-8458-9C1BC4C6006A}"/>
+										<State Name="" ID="{13EB4829-C35B-4DE5-85A1-1EC79CE57393}" ShortID="825420399"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</Bus>
+						<Bus Name="FX" ID="{D16C8B36-6EF8-4D2B-8B5F-EEE8A383E8A0}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="View" ID="{69E9E414-0F03-4106-AC3D-A85214AC2818}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Cockpit" ID="{BCD9C9D6-7233-43D4-BB78-A7A619C57B58}"/>
+										<State Name="" ID="{1BFB1D6C-8763-48A1-9DA1-4561FFC51EB3}" ShortID="398242155">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="24"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Outside" ID="{66BA08DF-5941-4C96-8458-9C1BC4C6006A}"/>
+										<State Name="" ID="{AEDDE79D-C84A-4DE9-B431-53355F7B4AB3}" ShortID="985752821"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

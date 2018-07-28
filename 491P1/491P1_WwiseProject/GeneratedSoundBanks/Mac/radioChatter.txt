@@ -1,0 +1,27 @@
+Event	ID	Name			Wwise Object Path	Notes
+	658101412	stopChatter			\Default Work Unit\radioChatter\stopChatter	
+	1350997147	modernChatter			\Default Work Unit\radioChatter\modernChatter	
+	1611798188	pauseChatter			\Default Work Unit\radioChatter\pauseChatter	
+	2614938359	resumeChatter			\Default Work Unit\radioChatter\resumeChatter	
+	3864511342	classicChatter			\Default Work Unit\radioChatter\classicChatter	
+	4239271640	starChatter			\Default Work Unit\radioChatter\starChatter	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	17413113	starRadioChatter4	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\starRadioChatter4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\radioChatter\starFighter\starRadioChatter4		3175344
+	77182369	Chatter5	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\Chatter5_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\radioChatter\Classic\Chatter5		1411344
+	170393890	modernChatter_01	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\modernChatter_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\radioChatter\Modern\modernChatter_01		297820
+	228260870	futureChatter_01	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\futureChatter_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\radioChatter\starFighter\futureChatter_01		395300
+	333841133	Chatter3	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\Chatter3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\radioChatter\Classic\Chatter3		2116944
+	364292968	mRadioChatter2	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\mRadioChatter2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\radioChatter\Modern\mRadioChatter2		948292
+	381119258	futureChatter_03	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\futureChatter_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\radioChatter\starFighter\futureChatter_03		176544
+	536181042	modernChatter_03	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\modernChatter_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\radioChatter\Modern\modernChatter_03		242692
+	585003597	Chatter1	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\Chatter1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\radioChatter\Classic\Chatter1		2337444
+	637993574	futureChatter_02	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\futureChatter_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\radioChatter\starFighter\futureChatter_02		293504
+	683962546	starRaduiChatter3	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\starRaduiChatter3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\radioChatter\starFighter\starRaduiChatter3		2116944
+	779328213	Chatter2	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\Chatter2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\radioChatter\Classic\Chatter2		948292
+	919049102	modernChatter_02	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\modernChatter_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\radioChatter\Modern\modernChatter_02		220644
+	951028208	starRadioChatter5	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\starRadioChatter5_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\radioChatter\starFighter\starRadioChatter5		1411344
+	951504622	mRadioChatter3	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\mRadioChatter3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\radioChatter\Modern\mRadioChatter3		2116944
+	968479887	Chatter4	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\Chatter4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\radioChatter\Classic\Chatter4		3175344
+	995784129	mRadioChatter1	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\mRadioChatter1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\radioChatter\Modern\mRadioChatter1		2337444
+
