@@ -84,7 +84,7 @@ namespace AirStrikeKit
 
                 StartCoroutine(MenuChange(.33f));
             }
-
+                //for MAC, change Mouse Y to Axis 3, windows Axis 6
             if (Input.GetAxis("Mouse Y") == 0.7f && canInteract == true)
             { 
                 canInteract = false;

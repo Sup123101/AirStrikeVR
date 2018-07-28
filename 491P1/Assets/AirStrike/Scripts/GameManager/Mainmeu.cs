@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace AirStrikeKit
 {
@@ -14,7 +16,10 @@ namespace AirStrikeKit
         public string[] menuOptions = new string[3];
         public int selectedIndex = 0;
         private bool canInteract = true;
-		void Start ()
+        Camera cam;
+        Vector3 screenPos;
+
+        void Start ()
 		{
 			musicManager = GameObject.Find ("WwiseGlobal");
 			musicScript = musicManager.GetComponent<MusicManager> ();
@@ -23,12 +28,47 @@ namespace AirStrikeKit
             //AkSoundEngine.SetState ("PlayerLife", "Menu");
             //AkSoundEngine.SetSwitch ("Music", "Menu", uniListener);
             //AkSoundEngine.PostEvent ("PlayMusic", uniListener);
-
+           // cam = GetComponent<Camera>();
             menuOptions[0] = "Classic";
             menuOptions[1] = "Modern";
             menuOptions[2] = "StarFighter";
+            /*
+            if (FindObjectOfType<EventSystem>() == null)
+            {
+                var es = new GameObject("EventSystem", typeof(EventSystem));
+                es.AddComponent<StandaloneInputModule>();
+            }
 
-		}
+            var canvasObject = new GameObject("Canvas");
+            var canvas = canvasObject.AddComponent<Canvas>();
+            canvasObject.AddComponent<GraphicRaycaster>();
+            canvas.renderMode = RenderMode.WorldSpace;
+
+            var buttonObject = new GameObject("Button");
+            var image = buttonObject.AddComponent<Image>();
+            image.transform.parent = canvas.transform;
+            image.rectTransform.sizeDelta = new Vector2(180, 50);
+            image.rectTransform.anchoredPosition = Vector3.zero;
+            image.color = new Color(1f, .3f, .3f, .5f);
+
+            var button = buttonObject.AddComponent<Button>();
+            button.targetGraphic = image;
+            button.onClick.AddListener(() => Debug.Log(Time.time));
+
+            var textObject = new GameObject("Text");
+            textObject.transform.parent = buttonObject.transform;
+            var text = textObject.AddComponent<Text>();
+            text.rectTransform.sizeDelta = Vector2.zero;
+            text.rectTransform.anchorMin = Vector2.zero;
+            text.rectTransform.anchorMax = Vector2.one;
+            text.rectTransform.anchoredPosition = new Vector2(.5f, .5f);
+            text.text = "Button!";
+            text.font = Resources.FindObjectsOfTypeAll<Font>()[0];
+            text.fontSize = 20;
+            text.color = Color.yellow;
+            text.alignment = TextAnchor.MiddleCenter;
+            */
+        }
 		private void Awake()
 		{
             selectedIndex = 0;
@@ -76,8 +116,9 @@ namespace AirStrikeKit
         }
         void Update()
         {
-           // print("value of joy stick is " + Input.GetAxis("Mouse Y"));
-             
+           // print("value of joy stick is Y " + Input.GetAxis("Mouse Y"));
+            //print("value of joy stick is X" + Input.GetAxis("Mouse X"));
+
 
             if (Input.GetAxis("Mouse Y") == -0.7f && canInteract == true)
             {
@@ -152,7 +193,8 @@ namespace AirStrikeKit
         }
 		public void OnGUI ()
 		{
-			if (skin)
+            cam = Camera.main;
+            if (skin)
 				GUI.skin = skin;
 		
 			GUI.DrawTexture (new Rect (Screen.width / 2 - Logo.width / 2, Screen.height / 2 - 150, Logo.width, Logo.height), Logo);
