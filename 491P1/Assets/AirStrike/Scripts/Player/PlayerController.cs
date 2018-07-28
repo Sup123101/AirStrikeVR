@@ -16,6 +16,7 @@ namespace AirStrikeKit
 		FlightView View;
 		public bool Active = true;
 		public bool SimpleControl;
+        public GameObject Restart;
 		// make it easy to control Plane will turning easier.
 		public bool Acceleration;
 		// Mobile*** enabled gyroscope controller
@@ -40,7 +41,8 @@ namespace AirStrikeKit
         public bool isPlayer;
 
 		void Awake(){
-			AirStrikeGame.playerController = this;
+            UnityEngine.XR.InputTracking.disablePositionalTracking = true;
+            AirStrikeGame.playerController = this;
             musicManager = GameObject.Find("WwiseGlobal");
             musicScript = musicManager.GetComponent<MusicManager>();
             playerEngineAudio = GameObject.Find("playerEngineAudio");
@@ -67,9 +69,9 @@ namespace AirStrikeKit
 			fireTouch = new TouchScreenVal (new Rect (Screen.width / 2, 0, Screen.width / 2, Screen.height));
 			switchTouch = new TouchScreenVal (new Rect (0, Screen.height - 100, Screen.width / 2, 100));
 			sliceTouch = new TouchScreenVal (new Rect (0, 0, Screen.width / 2, 50));
+            View.SwitchCameras();
 
-
-		}
+        }
 		private void OnDisable()
 		{
             AkSoundEngine.PostEvent("stopPEngine", playerEngineAudio);
@@ -77,6 +79,7 @@ namespace AirStrikeKit
 		private void OnDestroy()
 		{
             AkSoundEngine.PostEvent("stopPEngine", playerEngineAudio);
+            Restart.SetActive(true);
 		}
 		void Update ()
 		{
@@ -210,15 +213,18 @@ namespace AirStrikeKit
 				flight.WeaponControl.SwitchWeapon ();
 
 			}
-		
+		    /*
 			if (Input.GetKeyDown (KeyCode.C)) {
 				if (View)
 					View.SwitchCameras ();	
 			}	
+            */
             if (Input.GetKeyDown("joystick button 0"))
             {
-                if (View)
-                    View.SwitchCameras ();  
+               // UnityEngine.XR.InputTracking.Recenter();
+                //if(activeDevice.deviceName == "OpenVR")
+                /*if (View)
+                    View.SwitchCameras ();  */
             }
 		}
 

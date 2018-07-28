@@ -28,15 +28,17 @@ namespace AirStrikeKit
 		// camera swith
 		public void SwitchCameras ()
 		{
-			indexCamera += 1;
-            //print("index camera is : " + indexCamera);
-            if (indexCamera == 1)
+			//indexCamera += 1;
+            indexCamera = 1;
+            print("index camera is : " + indexCamera);
+            /*if (indexCamera == 1)
             {
                 AkSoundEngine.SetState("View", "Cockpit");
             }
             if(indexCamera != 1){
                 AkSoundEngine.SetState("View", "Outside");
             }
+            */
 			if (indexCamera >= Cameras.Length) {
 				indexCamera = 0;
 			}
@@ -63,7 +65,8 @@ namespace AirStrikeKit
 		{
 			// add this camera to primery
 			AddCamera (this.gameObject);
-		}
+            AkSoundEngine.SetState("View", "Cockpit");
+        }
 
 		public void AddCamera (GameObject cam)
 		{

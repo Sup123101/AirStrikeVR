@@ -2,11 +2,18 @@
 using System.Collections;
 using HWRWeaponSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 namespace AirStrikeKit
 {
 	public class GameUI : MonoBehaviour
 	{
-
+        public GameObject Restart;
+        public Button RRestart;
+        public Button RMainMenu;
+        public GameObject Resume;
+        public Button ReResume;
+        public Button ReMainMenu;
 		public GUISkin skin;
 		public Texture2D Logo;
 		public int Mode;
@@ -31,6 +38,7 @@ namespace AirStrikeKit
 			musicManager = GameObject.Find ("WwiseGlobal");
 			musicScript = musicManager.GetComponent<MusicManager> ();
             selectedIndex = 0;
+           
            
 		}
        
@@ -69,8 +77,11 @@ namespace AirStrikeKit
         }
 		 void Update()
 		{
-            print("selected index is " + selectedIndex);
-            print("state of change is " + sceneChange);
+            print("Mode is " + Mode);
+            //print("selected index is " + selectedIndex);
+            //print("state of change is " + sceneChange);
+            
+            
             if (Input.GetKeyDown("joystick button 12"))
                     {
                         Mode = 2;
@@ -150,13 +161,15 @@ namespace AirStrikeKit
 				if (Input.GetKeyDown (KeyCode.Escape)) {
 					Mode = 2;	
 				}
-                   // sceneChange = false;
-			
-				if (AirStrikeGame.playerController) {
-				
-					AirStrikeGame.playerController.Active = true;
-			
-					GUI.skin.label.alignment = TextAnchor.UpperLeft;
+                    // sceneChange = false;
+                    
+                    
+                    if (AirStrikeGame.playerController) {
+                        
+                        AirStrikeGame.playerController.Active = true;
+                        Resume.SetActive(false);
+                        Restart.SetActive(false);
+                        GUI.skin.label.alignment = TextAnchor.UpperLeft;
 					GUI.skin.label.fontSize = 30;
 					GUI.Label (new Rect (20, 20, 200, 50), "Kills " + AirStrikeGame.gameManager.Killed.ToString ());
 					GUI.Label (new Rect (20, 60, 200, 50), "Score " + AirStrikeGame.gameManager.Score.ToString ());
@@ -189,21 +202,24 @@ namespace AirStrikeKit
 				}
 				break;
 			case 1:
-				if (AirStrikeGame.playerController)
+                    
+                    if (AirStrikeGame.playerController)
 					AirStrikeGame.playerController.Active = false;
 				
 				MouseLock.MouseLocked = false;
                     sceneChange = true;
-				GUI.skin.label.alignment = TextAnchor.MiddleCenter;
+                    
+                    GUI.skin.label.alignment = TextAnchor.MiddleCenter;
 				GUI.Label (new Rect (0, Screen.height / 2 + 10, Screen.width, 30), "Game Over");
-				if (musicpaused == false) {
+                    
+                    if (musicpaused == false) {
 					musicScript.pauseMusic ();
 					musicpaused = true;
 				}
                     menuOptions[0] = "Restart";
                     menuOptions[1] = "Main menu";
-
-				GUI.DrawTexture (new Rect (Screen.width / 2 - Logo.width / 2, Screen.height / 2 - 150, Logo.width, Logo.height), Logo);
+                    
+                    GUI.DrawTexture (new Rect (Screen.width / 2 - Logo.width / 2, Screen.height / 2 - 150, Logo.width, Logo.height), Logo);
                     GUI.SetNextControlName("Restart");
 				if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 50, 300, 40), "Restart")) {
 					
@@ -223,8 +239,22 @@ namespace AirStrikeKit
                     SceneManager.LoadScene("Mainmenu");
 
 				}
+                    if (selectedIndex == 0)
+                    {
+
+                        RMainMenu.OnDeselect(null);
+                        RRestart.OnSelect(null);
+                    }
+                    if (selectedIndex == 1)
+                    {
+
+                        RRestart.OnDeselect(null);
+                        RMainMenu.OnSelect(null);
+                    }
                     GUI.FocusControl(menuOptions[selectedIndex]);
-				break;
+                    
+
+                    break;
 		
 			case 2:
 				if (AirStrikeGame.playerController)
@@ -236,7 +266,9 @@ namespace AirStrikeKit
                    
 				Time.timeScale = 0;
 
-				GUI.skin.label.alignment = TextAnchor.MiddleCenter;
+                    Resume.SetActive(true);
+                    Restart.SetActive(false);
+                    GUI.skin.label.alignment = TextAnchor.MiddleCenter;
 				GUI.Label (new Rect (0, Screen.height / 2 + 10, Screen.width, 30), "Pause");
 				if (musicpaused == false) {
 					musicScript.pauseMusic ();
@@ -264,6 +296,18 @@ namespace AirStrikeKit
 					//Application.LoadLevel ("Mainmenu");
                     SceneManager.LoadScene("Mainmenu");
 				}
+                if(selectedIndex == 0)
+                    {
+                        
+                        ReMainMenu.OnDeselect(null);
+                        ReResume.OnSelect(null);
+                    }
+                if (selectedIndex == 1)
+                    {
+                        
+                        ReResume.OnDeselect(null);
+                        ReMainMenu.OnSelect(null);
+                    }
                     GUI.FocusControl(menuOptions[selectedIndex]);
 				break;
 			
