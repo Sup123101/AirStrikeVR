@@ -17,6 +17,12 @@ namespace AirStrikeKit
 		public GUISkin skin;
 		public Texture2D Logo;
 		public int Mode;
+        public Text kills;// Amount of kills text
+        public Text hitpoint; // HP Text
+        public Image W1; // Weapon Icons
+        public Image W2;
+        public Image W3;
+        public Image W4;
 		private WeaponController weapon;
 		public GameObject musicManager;
 		private MusicManager musicScript;
@@ -27,6 +33,7 @@ namespace AirStrikeKit
         public int selectedIndex = 0;
         private bool canInteract = true;
         private bool sceneChange = false;
+        public Canvas VRCanvas;
 		void Awake(){
 			AirStrikeGame.gameUI = this;
            
@@ -77,7 +84,7 @@ namespace AirStrikeKit
         }
 		 void Update()
 		{
-            print("Mode is " + Mode);
+           // print("Mode is " + Mode);
             //print("selected index is " + selectedIndex);
             //print("state of change is " + sceneChange);
             
@@ -173,15 +180,93 @@ namespace AirStrikeKit
 					GUI.skin.label.fontSize = 30;
 					GUI.Label (new Rect (20, 20, 200, 50), "Kills " + AirStrikeGame.gameManager.Killed.ToString ());
 					GUI.Label (new Rect (20, 60, 200, 50), "Score " + AirStrikeGame.gameManager.Score.ToString ());
-				
-					GUI.skin.label.alignment = TextAnchor.UpperRight;
+                    kills.text = "Kills: " + AirStrikeGame.gameManager.Killed.ToString();
+                    hitpoint.text = "HP: " + AirStrikeGame.playerController.GetComponent<DamageManager>().HP;
+
+                    GUI.skin.label.alignment = TextAnchor.UpperRight;
 					GUI.Label (new Rect (Screen.width - 220, 20, 200, 50), "ARMOR " + AirStrikeGame.playerController.GetComponent<DamageManager> ().HP);
 					GUI.skin.label.fontSize = 16;
 				
-		
+		             //weapon.currentWeapon
 					if (weapon.WeaponLists [weapon.CurrentWeapon].Icon)
 						GUI.DrawTexture (new Rect (Screen.width - 100, Screen.height - 100, 80, 80), weapon.WeaponLists [weapon.CurrentWeapon].Icon);
-				
+				    if(weapon.CurrentWeapon == 0)
+                        {
+                            if (W1)
+                            {
+                                W1.enabled = true;
+                            }
+                            if (W2)
+                            {
+                                W2.enabled = false;
+                            }
+                            if (W3)
+                            {
+                                W3.enabled = false;
+                            }
+                            if (W4)
+                            {
+                                W4.enabled = false;
+                            }
+
+                        }
+                    if(weapon.CurrentWeapon == 1)
+                        {
+                            if (W1)
+                            {
+                                W1.enabled = false;
+                            }
+                            if (W2)
+                            {
+                                W2.enabled = true;
+                            }
+                            if (W3)
+                            {
+                                W3.enabled = false;
+                            }
+                            if (W4)
+                            {
+                                W4.enabled = false;
+                            }
+                        }
+                    if(weapon.CurrentWeapon == 2)
+                        {
+                            if (W1)
+                            {
+                                W1.enabled = false;
+                            }
+                            if (W2)
+                            {
+                                W2.enabled = false;
+                            }
+                            if (W3)
+                            {
+                                W3.enabled = true;
+                            }
+                            if (W4)
+                            {
+                                W4.enabled = false;
+                            }
+                        }
+                    if(weapon.CurrentWeapon == 3)
+                        {
+                            if (W1)
+                            {
+                                W1.enabled = false;
+                            }
+                            if (W2)
+                            {
+                                W2.enabled = false;
+                            }
+                            if (W3)
+                            {
+                                W3.enabled = false;
+                            }
+                            if (W4)
+                            {
+                                W4.enabled = true;
+                            }
+                        }
 					GUI.skin.label.alignment = TextAnchor.UpperRight;
 					if (weapon.WeaponLists [weapon.CurrentWeapon].Ammo <= 0 && weapon.WeaponLists [weapon.CurrentWeapon].ReloadingProcess > 0) {
 						if (!weapon.WeaponLists [weapon.CurrentWeapon].InfinityAmmo)
