@@ -63,6 +63,9 @@ namespace HWRWeaponSystem
         private int amountlockedPrevious = 0;
         private bool lockstatusStar = false;
         private bool lockstatusStarPrevious = false;
+        public RectTransform targetBox;
+        public Canvas VRUI;
+        
 
 		private void Start ()
 		{
@@ -144,11 +147,21 @@ namespace HWRWeaponSystem
             if(amountlockedPrevious == 0)
             {
                 lockStatus = false;
+                if (musicScript.currentMode == 2)
+                {
+                    if (targetBox)
+                        targetBox.gameObject.SetActive(false);
+                }
             }
             else if(amountlockedPrevious != 0)
             {
 
                 lockStatus = true;
+                if (musicScript.currentMode == 2)
+                {
+                    if (targetBox)
+                        targetBox.gameObject.SetActive(true);
+                }
             } 
 
 
@@ -174,6 +187,8 @@ namespace HWRWeaponSystem
                     {
                         AkSoundEngine.PostEvent("lockOn", CurrentCamera.gameObject);
                         lockstatusStarPrevious = true;
+                        if (targetBox)
+                            targetBox.gameObject.SetActive(true);
                     }
 
                 }
@@ -183,6 +198,9 @@ namespace HWRWeaponSystem
                     {
                         AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
                         lockstatusStarPrevious = false;
+                        if (targetBox)
+                            targetBox.gameObject.SetActive(false);
+
                     }
 
                 }
@@ -198,6 +216,7 @@ namespace HWRWeaponSystem
                         {
                             AkSoundEngine.PostEvent("lockOn", CurrentCamera.gameObject);
                             previousLockStatus = true;
+                            
                         }
 
                     }
@@ -207,6 +226,7 @@ namespace HWRWeaponSystem
                         {
                             AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
                             previousLockStatus = false;
+                            
                         }
 
                     }
@@ -336,8 +356,16 @@ namespace HWRWeaponSystem
 					Vector3 screenPos = CurrentCamera.WorldToScreenPoint (aimtarget.transform.position);
 					float distance = Vector3.Distance (transform.position, aimtarget.transform.position);
                     //lockStatus = true;
+                    var canvasRect = VRUI.GetComponent<RectTransform>();
+                    var pos = Vector2.zero;
+                    var uiCamera = CurrentCamera;
+                    var worldCamera = CurrentCamera;
+                    var screenPos3 = RectTransformUtility.WorldToScreenPoint(worldCamera, aimtarget.transform.position);
+                    RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screenPos3, uiCamera, out pos);
+                    targetBox.localPosition = pos;
 					if (locked) {
-                      
+                        //targetBox.position = RectTransformUtility.WorldToScreenPoint(CurrentCamera, aimtarget.transform.position);
+                        //RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screenPos, CurrentCamera, out pos);
                         if (TargetLockedTexture)
                             
 							GUI.DrawTexture (new Rect (screenPos.x - TargetLockedTexture.width / 2, Screen.height - screenPos.y - TargetLockedTexture.height / 2, TargetLockedTexture.width, TargetLockedTexture.height), TargetLockedTexture);
