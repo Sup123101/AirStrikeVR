@@ -65,9 +65,12 @@ namespace HWRWeaponSystem
         private bool lockstatusStarPrevious = false;
         public RectTransform targetBox;
         public Canvas VRUI;
-        
+        public GameObject FlightCamera;
+        private WeaponController weapon;
 
-		private void Start ()
+
+
+        private void Start ()
 		{
 			if (!Owner)
 				Owner = this.transform.root.gameObject;
@@ -84,6 +87,15 @@ namespace HWRWeaponSystem
 			}
             musicManager = GameObject.Find("WwiseGlobal");
             musicScript = musicManager.GetComponent<MusicManager>();
+            if (thisisPlayer)
+            {
+                if (musicScript.currentMode != 0)
+                {
+                    FlightCamera = GameObject.Find("FlightCamera");
+                   // weapon = AirStrikeGame.playerController.GetComponent<WeaponController>();
+                }
+            }
+           
 		}
 
 		[HideInInspector]
@@ -152,6 +164,7 @@ namespace HWRWeaponSystem
                     if (targetBox)
                         targetBox.gameObject.SetActive(false);
                 }
+                
             }
             else if(amountlockedPrevious != 0)
             {
@@ -162,11 +175,13 @@ namespace HWRWeaponSystem
                     if (targetBox)
                         targetBox.gameObject.SetActive(true);
                 }
-            } 
+               
+            }
+            
 
 
 
-			if (CurrentCamera == null) {
+            if (CurrentCamera == null) {
 			
 				CurrentCamera = Camera.main;
 			
