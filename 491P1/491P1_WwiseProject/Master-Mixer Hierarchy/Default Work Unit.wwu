@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{6E45B4EF-D09E-4C6E-9F06-0C542B9E1118}" WorkUnitID="{3913C16D-B34C-49D8-B63D-87B01F28BF70}"/>
@@ -93,19 +100,12 @@
 						</Bus>
 						<Bus Name="Alerts" ID="{6A8E2487-BF75-4DBF-95E5-B4DB0E025ACC}"/>
 						<Bus Name="Music" ID="{DCA561A2-7528-4645-8610-D75BA5E486C6}">
-							<PropertyList>
-								<Property Name="BusVolume" Type="Real64">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ChildrenList>
 								<Bus Name="Stingers" ID="{785D2336-1B1F-48C3-9086-43599CA237DB}">
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-28</Value>
+												<Value>-1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
