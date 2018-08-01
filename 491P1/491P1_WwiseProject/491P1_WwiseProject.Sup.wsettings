@@ -5,10 +5,13 @@
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491SFX\Weapons\flakCannon"/>
 				<Property Name="Event Action List\{08CA089C-9357-470B-A41A-34D27B79EB21}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{26700B27-D674-4F97-A982-ED84B1EA977B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{26C2B405-F280-4B40-AE40-BA43742BB78D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{374BED71-F0D8-471B-AF46-7F52087754C2}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{408F0A38-5BEB-4995-9599-530DB086BE36}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{50689751-8993-4A0A-B5A9-2F6890F84D34}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{958B6742-B2A7-4324-B165-53783DDD9973}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{BACD1B01-7540-498C-8972-F3F5BB5313FE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CB7686D0-A2ED-42D6-A5E7-A193D5B62153}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CCBC306A-EA0A-4E8A-8F32-9C8C68B385AC}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D0F86056-2F38-4B29-A0BC-4A54FB2EB744}\x64_Expand States" Type="string" Value=""/>

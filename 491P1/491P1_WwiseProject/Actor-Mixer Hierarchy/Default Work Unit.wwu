@@ -1226,10 +1226,15 @@
 					<PropertyList>
 						<Property Name="Highpass" Type="int16">
 							<ValueList>
-								<Value>18</Value>
+								<Value>2</Value>
 							</ValueList>
 						</Property>
 						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>45</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -1244,6 +1249,12 @@
 							</ModifierList>
 						</Property>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+						<Property Name="PriorityDistanceOffset" Type="int16">
+							<ValueList>
+								<Value>-100</Value>
+							</ValueList>
+						</Property>
 						<Property Name="UseMaxSoundPerInstance" Type="bool">
 							<ValueList>
 								<Value>True</Value>
@@ -1251,11 +1262,16 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-5</Value>
+								<Value>-17</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="AttachableMixerInput">
+							<Custom>
+								<Effect Name="Oculus Spatializer (Attached)" ID="{3DDE7439-728B-4AB3-8ECC-3EBF5468B17C}" ShortID="332351025" PluginName="AttachableMixerInput" CompanyID="266" PluginID="501" PluginType="3"/>
+							</Custom>
+						</Reference>
 						<Reference Name="Attenuation">
 							<ObjectRef Name="Explosion" ID="{40406832-8BB0-4AEB-828F-B10565F336D3}" WorkUnitID="{00F595EF-96A4-45E3-8023-4BE53442A395}"/>
 						</Reference>
@@ -1263,7 +1279,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Explosions" ID="{29E14FB0-7BED-404D-BBE5-CF2552B3D813}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+							<ObjectRef Name="VRWeapons" ID="{96E5B865-84D2-4803-9813-C7B4235CFF53}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1349,6 +1365,11 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Metal" ID="{CFF20FB0-0F96-4250-B860-3D27B05C1E6B}" ShortID="519283391">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>22</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -1463,6 +1484,31 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Sand" ID="{C4FBC65B-9F55-4476-956B-90A258FDDB93}" ShortID="149968441">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>23</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>14</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8F85A8F9-2D0E-40A5-8003-F6E53BB62575}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
@@ -1553,10 +1599,10 @@
 									<ChildrenList>
 										<AudioFileSource Name="flakExplosion_01" ID="{03968793-12B8-4195-8A2B-9D015F0556F6}" ShortID="409699218">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="2.86816192560175"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0.555251641137856"/>
-												<Property Name="LoopEnd" Type="Real64" Value="2.53884026258206"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.96341463414634"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.569105691056911"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.53252032520325"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>flakExplosion_01.wav</AudioFile>
@@ -1578,7 +1624,8 @@
 									<ChildrenList>
 										<AudioFileSource Name="flakExplosion_02" ID="{774C2F12-C158-4C75-AB65-6BA1BF03619D}" ShortID="891137738">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="3.07047619047619"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.8041600675747"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.8041600675747"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>flakExplosion_02.wav</AudioFile>
@@ -1600,7 +1647,8 @@
 									<ChildrenList>
 										<AudioFileSource Name="flakExplosion_03" ID="{2E3C12A6-76BC-4C92-B51C-264ADF6056A1}" ShortID="1054171988">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="2.83333333333333"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.72764227642277"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.72764227642277"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>flakExplosion_03.wav</AudioFile>
@@ -1645,7 +1693,9 @@
 									<ChildrenList>
 										<AudioFileSource Name="Explosion_01" ID="{503C8B9F-152A-4ED1-85FF-83B956AED0A1}" ShortID="34444945">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="2.45834467120181"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.64798123930528"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.54374171447342E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.67341865645002"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Explosion_01.wav</AudioFile>
@@ -1667,9 +1717,11 @@
 									<ChildrenList>
 										<AudioFileSource Name="Explosion_02" ID="{445D7D4D-7AB2-4C44-B333-2C32CE34ECD1}" ShortID="805435">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="3.64795918367347"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.40501078480173"/>
 												<Property Name="LoopBegin" Type="Real64" Value="4.78944312954941E-02"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.69620043139207E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.43197278911565"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Explosion_02.wav</AudioFile>
@@ -1691,7 +1743,8 @@
 									<ChildrenList>
 										<AudioFileSource Name="Explosion_03" ID="{9AF2EB50-1053-40D0-AF8F-D8868CDB0938}" ShortID="241938170">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="3.98907029478458"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.33211722333674"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.33211722333674"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Explosion_03.wav</AudioFile>
@@ -4021,7 +4074,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-1</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

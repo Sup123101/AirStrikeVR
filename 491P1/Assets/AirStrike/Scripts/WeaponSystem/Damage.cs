@@ -156,22 +156,22 @@ namespace HWRWeaponSystem
 				if (collision.gameObject.tag == "Player") {
 					//soundtoPlay = 1;
 					//print ("hit Players");
-					AkSoundEngine.PostEvent ("FXExplosion", collision.gameObject);
+					AkSoundEngine.PostEvent ("metalExplosion", collision.gameObject);
 				}
 				if (collision.gameObject.tag == "Enemy") {
 					//soundtoPlay = 1;
 					//print ("hit Enemy");
-					AkSoundEngine.PostEvent ("FXExplosion", collision.gameObject);
+					AkSoundEngine.PostEvent ("metalExplosion", collision.gameObject);
 				}
 				if (collision.gameObject.tag == "Scene") {
 					//soundtoPlay = 2;
 					//print ("flakked the sand");
-					AkSoundEngine.PostEvent ("FXExplosion", collision.gameObject);
+					AkSoundEngine.PostEvent ("sandExplosion", collision.gameObject);
 				}
                 if (collision.gameObject.tag == "Untagged") {
                     //soundtoPlay = 2;
                     //print ("flakked the unknown");
-                    AkSoundEngine.PostEvent ("FXExplosion", collision.gameObject);
+                    //AkSoundEngine.PostEvent ("FXExplosion", collision.gameObject);
                 }
 
 

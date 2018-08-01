@@ -147,11 +147,11 @@
 			<IncludedMemoryFiles>
 				<File Id="805435" Language="SFX">
 					<ShortName>Explosion_02.wav</ShortName>
-					<Path>SFX\Explosion_02_30DB0ED6.wem</Path>
+					<Path>SFX\Explosion_02_83C1A7CC.wem</Path>
 				</File>
 				<File Id="34444945" Language="SFX">
 					<ShortName>Explosion_01.wav</ShortName>
-					<Path>SFX\Explosion_01_9E97DB7B.wem</Path>
+					<Path>SFX\Explosion_01_D8C2AB81.wem</Path>
 				</File>
 				<File Id="101869958" Language="SFX">
 					<ShortName>sandExplosion_03.wav</ShortName>
@@ -167,7 +167,7 @@
 				</File>
 				<File Id="241938170" Language="SFX">
 					<ShortName>Explosion_03.wav</ShortName>
-					<Path>SFX\Explosion_03_F61F5E80.wem</Path>
+					<Path>SFX\Explosion_03_4E89571D.wem</Path>
 				</File>
 				<File Id="324887684" Language="SFX">
 					<ShortName>metalExplosion_02.wav</ShortName>
@@ -179,7 +179,7 @@
 				</File>
 				<File Id="409699218" Language="SFX">
 					<ShortName>flakExplosion_01.wav</ShortName>
-					<Path>SFX\flakExplosion_01_68EA10C3.wem</Path>
+					<Path>SFX\flakExplosion_01_BA1C86D7.wem</Path>
 				</File>
 				<File Id="510195601" Language="SFX">
 					<ShortName>sandExplosion_02.wav</ShortName>
@@ -203,11 +203,11 @@
 				</File>
 				<File Id="891137738" Language="SFX">
 					<ShortName>flakExplosion_02.wav</ShortName>
-					<Path>SFX\flakExplosion_02_A10A2F86.wem</Path>
+					<Path>SFX\flakExplosion_02_A2B36BC5.wem</Path>
 				</File>
 				<File Id="1054171988" Language="SFX">
 					<ShortName>flakExplosion_03.wav</ShortName>
-					<Path>SFX\flakExplosion_03_E99D4C8F.wem</Path>
+					<Path>SFX\flakExplosion_03_FBC13481.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
