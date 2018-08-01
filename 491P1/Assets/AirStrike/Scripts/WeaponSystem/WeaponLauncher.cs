@@ -145,15 +145,18 @@ namespace HWRWeaponSystem
 		private void OnDestroy()
 		{
             AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
+            AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject);
 		}
 		private void OnDisable()
 		{
             AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
-		}
+            AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject);
+        }
 		private void OnApplicationPause(bool pause)
 		{
             AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
-		}
+            AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject);
+        }
 		private void Update ()
 		{
             if(amountlockedPrevious == 0)
@@ -201,6 +204,7 @@ namespace HWRWeaponSystem
                     if (lockstatusStar == true)
                     {
                         AkSoundEngine.PostEvent("lockOn", CurrentCamera.gameObject);
+                        AkSoundEngine.PostEvent("startStarLockOn", CurrentCamera.gameObject);
                         lockstatusStarPrevious = true;
                         if (targetBox)
                             targetBox.gameObject.SetActive(true);
@@ -212,6 +216,8 @@ namespace HWRWeaponSystem
                     if (lockstatusStar == false)
                     {
                         AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
+                        AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject); //stop the sound
+
                         lockstatusStarPrevious = false;
                         if (targetBox)
                             targetBox.gameObject.SetActive(false);
@@ -597,7 +603,14 @@ namespace HWRWeaponSystem
 							//print ("firing the M4 GUn");
 							//print ("firing " + gameObject.name);
 							if (gameObject.name == "weapon_minigun") {
-								AkSoundEngine.PostEvent ("M4Single", gameObject);
+                                if (musicScript.currentMode == 1)
+                                {
+                                    AkSoundEngine.PostEvent("M4Single", gameObject);
+                                }
+                                if(musicScript.currentMode == 2)
+                                {
+                                    AkSoundEngine.PostEvent("gattlingSingle", gameObject);
+                                }
 							}
 							if (gameObject.name == "weapon_flakgun") {
 								AkSoundEngine.PostEvent ("Cannon", gameObject);

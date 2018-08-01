@@ -27,7 +27,9 @@ Custom State	ID	Name	State Group	Owner		Notes
 	898733376	Cockpit	View	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\botEngine		
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	182490494	VRbotEngine			\Default Work Unit\Master Audio Bus\botEngine\VRbotEngine	
 	580025197	radioChatter			\Default Work Unit\Master Audio Bus\radioChatter	
+	710522594	VRImpacts			\Default Work Unit\Master Audio Bus\Impacts\VRImpacts	
 	753483701	Explosions			\Default Work Unit\Master Audio Bus\Explosions	
 	852736692	playerEngine			\Default Work Unit\Master Audio Bus\playerEngine	
 	986855776	Alerts			\Default Work Unit\Master Audio Bus\Alerts	
@@ -35,12 +37,22 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1467963052	Weapons			\Default Work Unit\Master Audio Bus\Weapons	
 	1534528554	VA			\Default Work Unit\Master Audio Bus\VA	
 	1802970371	FX			\Default Work Unit\Master Audio Bus\FX	
+	2027167704	VRWeapons			\Default Work Unit\Master Audio Bus\Weapons\VRWeapons	
+	2047245040	VRplayerEngine			\Default Work Unit\Master Audio Bus\playerEngine\VRplayerEngine	
+	2671005729	VRExplosions			\Default Work Unit\Master Audio Bus\Explosions\VRExplosions	
 	3249548410	botEngine			\Default Work Unit\Master Audio Bus\botEngine	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+	4028195487	VRFX			\Default Work Unit\Master Audio Bus\FX\VRFX	
 
 Effect plug-ins	ID	Name	Type				Notes
-	2080872166	Brick_Wall_Minus_6dB_Peak_Fast_Release	Wwise Peak Limiter			
+	49516274	Oculus Spatializer (Custom)	Oculus Spatializer			
+	138480335	Oculus Spatializer (Custom)	Oculus Spatializer			
+	419494093	Oculus Spatializer (Custom)	Oculus Spatializer			
+	438880257	Oculus Spatializer (Custom)	Oculus Spatializer			
+	690724450	Oculus Spatializer (Custom)	Oculus Spatializer			
+	701864023	Oculus Spatializer (Custom)	Oculus Spatializer			
+	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

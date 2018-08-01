@@ -9,11 +9,25 @@
 							<ObjectRef Name="System" ID="{6E45B4EF-D09E-4C6E-9F06-0C542B9E1118}" WorkUnitID="{3913C16D-B34C-49D8-B63D-87B01F28BF70}"/>
 						</Reference>
 						<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
-							<ObjectRef Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+							<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="botEngine" ID="{224016E3-D2B6-44E8-886C-62A902A0F120}">
+							<ChildrenList>
+								<Bus Name="VRbotEngine" ID="{7200B340-D56B-4839-B390-0194B0D09F86}">
+									<ReferenceList>
+										<Reference Name="AudioDevice">
+											<ObjectRef Name="System" ID="{6E45B4EF-D09E-4C6E-9F06-0C542B9E1118}" WorkUnitID="{3913C16D-B34C-49D8-B63D-87B01F28BF70}"/>
+										</Reference>
+										<Reference Name="Mixer">
+											<Custom>
+												<Effect Name="Oculus Spatializer (Custom)" ID="{98646C18-5459-4244-8B80-4B3AE45898D1}" ShortID="701864023" PluginName="Oculus Spatializer" CompanyID="266" PluginID="146" PluginType="6"/>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
 									<StateGroupInfo>
@@ -25,7 +39,8 @@
 										<StateRef Name="Cockpit" ID="{BCD9C9D6-7233-43D4-BB78-A7A619C57B58}"/>
 										<State Name="" ID="{7AB7E76D-6C08-4C9B-8E96-56A734012E30}" ShortID="898733376">
 											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="24"/>
+												<Property Name="BusVolume" Type="Real64" Value="-2"/>
+												<Property Name="Lowpass" Type="int16" Value="35"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -37,6 +52,17 @@
 							</StateInfo>
 						</Bus>
 						<Bus Name="Explosions" ID="{29E14FB0-7BED-404D-BBE5-CF2552B3D813}">
+							<ChildrenList>
+								<Bus Name="VRExplosions" ID="{B822B0AE-AE0F-4D76-9344-77E58F34A3E8}">
+									<ReferenceList>
+										<Reference Name="Mixer">
+											<Custom>
+												<Effect Name="Oculus Spatializer (Custom)" ID="{83A8B5B9-B1FB-464D-84D1-330BF38E01A7}" ShortID="690724450" PluginName="Oculus Spatializer" CompanyID="266" PluginID="146" PluginType="6"/>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
 									<StateGroupInfo>
@@ -48,7 +74,8 @@
 										<StateRef Name="Cockpit" ID="{BCD9C9D6-7233-43D4-BB78-A7A619C57B58}"/>
 										<State Name="" ID="{B2FF375B-6A48-4CDF-9EDC-1AF16610E48A}" ShortID="358267488">
 											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="24"/>
+												<Property Name="BusVolume" Type="Real64" Value="-2"/>
+												<Property Name="Lowpass" Type="int16" Value="35"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -62,6 +89,17 @@
 						<Bus Name="Alerts" ID="{6A8E2487-BF75-4DBF-95E5-B4DB0E025ACC}"/>
 						<Bus Name="Music" ID="{DCA561A2-7528-4645-8610-D75BA5E486C6}"/>
 						<Bus Name="Impacts" ID="{21592AE9-A3E3-49DA-B9E5-7254DD2BDE79}">
+							<ChildrenList>
+								<Bus Name="VRImpacts" ID="{AB4A6A19-D438-412E-9E0F-DDB95FD60BA6}">
+									<ReferenceList>
+										<Reference Name="Mixer">
+											<Custom>
+												<Effect Name="Oculus Spatializer (Custom)" ID="{106380C5-5616-47D0-A26D-F1259055B4CC}" ShortID="419494093" PluginName="Oculus Spatializer" CompanyID="266" PluginID="146" PluginType="6"/>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
 									<StateGroupInfo>
@@ -73,7 +111,8 @@
 										<StateRef Name="Cockpit" ID="{BCD9C9D6-7233-43D4-BB78-A7A619C57B58}"/>
 										<State Name="" ID="{FFA53741-1E24-4F80-8436-C9C30D410619}" ShortID="260395234">
 											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="24"/>
+												<Property Name="BusVolume" Type="Real64" Value="-2"/>
+												<Property Name="Lowpass" Type="int16" Value="35"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -85,6 +124,17 @@
 							</StateInfo>
 						</Bus>
 						<Bus Name="playerEngine" ID="{674729E1-E03C-4544-B3BF-B938D0A62C55}">
+							<ChildrenList>
+								<Bus Name="VRplayerEngine" ID="{F17966C1-75F7-435C-9173-CD0DF6CD43B4}">
+									<ReferenceList>
+										<Reference Name="Mixer">
+											<Custom>
+												<Effect Name="Oculus Spatializer (Custom)" ID="{E67EDBC2-BA8F-459B-9784-087036F7881E}" ShortID="49516274" PluginName="Oculus Spatializer" CompanyID="266" PluginID="146" PluginType="6"/>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
 									<StateGroupInfo>
@@ -96,7 +146,8 @@
 										<StateRef Name="Cockpit" ID="{BCD9C9D6-7233-43D4-BB78-A7A619C57B58}"/>
 										<State Name="" ID="{BBFAB50F-CE21-4459-ADB7-9A100BC55E75}" ShortID="112750970">
 											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="24"/>
+												<Property Name="BusVolume" Type="Real64" Value="-2"/>
+												<Property Name="Lowpass" Type="int16" Value="35"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -176,6 +227,17 @@
 							</DuckingList>
 						</Bus>
 						<Bus Name="Weapons" ID="{CDD754E6-FF3F-445F-B70B-FA7AC22A17C0}">
+							<ChildrenList>
+								<Bus Name="VRWeapons" ID="{96E5B865-84D2-4803-9813-C7B4235CFF53}">
+									<ReferenceList>
+										<Reference Name="Mixer">
+											<Custom>
+												<Effect Name="Oculus Spatializer (Custom)" ID="{378EC5EB-D0BF-45C1-B2AF-4A17C0B3CCEC}" ShortID="438880257" PluginName="Oculus Spatializer" CompanyID="266" PluginID="146" PluginType="6"/>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
 									<StateGroupInfo>
@@ -187,7 +249,8 @@
 										<StateRef Name="Cockpit" ID="{BCD9C9D6-7233-43D4-BB78-A7A619C57B58}"/>
 										<State Name="" ID="{FDF3B61A-E2F8-4467-8CD9-997EF81E3FDE}" ShortID="307941806">
 											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="24"/>
+												<Property Name="BusVolume" Type="Real64" Value="-2"/>
+												<Property Name="Lowpass" Type="int16" Value="35"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -199,6 +262,17 @@
 							</StateInfo>
 						</Bus>
 						<Bus Name="FX" ID="{D16C8B36-6EF8-4D2B-8B5F-EEE8A383E8A0}">
+							<ChildrenList>
+								<Bus Name="VRFX" ID="{AF4C119B-9FA6-4654-82F4-B2A629E357AB}">
+									<ReferenceList>
+										<Reference Name="Mixer">
+											<Custom>
+												<Effect Name="Oculus Spatializer (Custom)" ID="{40BBE4BD-9DDF-4EFE-BA0A-4C93F4B71ED6}" ShortID="138480335" PluginName="Oculus Spatializer" CompanyID="266" PluginID="146" PluginType="6"/>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
 									<StateGroupInfo>
@@ -210,7 +284,8 @@
 										<StateRef Name="Cockpit" ID="{BCD9C9D6-7233-43D4-BB78-A7A619C57B58}"/>
 										<State Name="" ID="{1BFB1D6C-8763-48A1-9DA1-4561FFC51EB3}" ShortID="398242155">
 											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="24"/>
+												<Property Name="BusVolume" Type="Real64" Value="-2"/>
+												<Property Name="Lowpass" Type="int16" Value="35"/>
 											</PropertyList>
 										</State>
 									</CustomState>

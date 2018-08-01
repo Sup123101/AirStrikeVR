@@ -7,10 +7,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	4258275658	pauseVA			\Default Work Unit\VA\pauseVA	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	18348055	starMission_01	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\starMission_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\VA\starFighter\starMission_01		2071468
-	27620938	starMission_02	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\starMission_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\VA\starFighter\starMission_02		1831308
-	70609957	ClassicVA_02	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\ClassicVA_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\VA\Classic\ClassicVA_02		1443956
-	577298175	ClassicVA_01	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\ClassicVA_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\VA\Classic\ClassicVA_01		1411344
-	641710785	ModernMis_01	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\ModernMis_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\VA\Modern\ModernMis_01		1495872
-	927439579	ModernMis_02	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\ModernMis_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\VA\Modern\ModernMis_02		1343540
+	18348055	starMission_01	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Windows\SFX\starMission_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\VA\starFighter\starMission_01		2071468
+	27620938	starMission_02	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Windows\SFX\starMission_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\VA\starFighter\starMission_02		1831308
+	70609957	ClassicVA_02	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Windows\SFX\ClassicVA_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\VA\Classic\ClassicVA_02		1443956
+	577298175	ClassicVA_01	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Windows\SFX\ClassicVA_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\VA\Classic\ClassicVA_01		1411344
+	641710785	ModernMis_01	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Windows\SFX\ModernMis_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\VA\Modern\ModernMis_01		1495872
+	927439579	ModernMis_02	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Windows\SFX\ModernMis_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\VA\Modern\ModernMis_02		1343540
 

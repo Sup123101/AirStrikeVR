@@ -37,8 +37,8 @@
 						<ObjectRef Name="laserSingle" ID="{ABDB6916-FC7F-4286-A929-1298C118F040}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Cannon" ID="{958B6742-B2A7-4324-B165-53783DDD9973}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="heavyCannon" ID="{D694DB51-9963-45BD-A7D6-DAE8A180C846}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="FXExplosion" ID="{08CA089C-9357-470B-A41A-34D27B79EB21}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="stopLaserLoop" ID="{3446D35F-DA86-4960-8C91-6D5E42F168EC}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="gattlingSingle" ID="{408F0A38-5BEB-4995-9599-530DB086BE36}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="startBulletLoop" ID="{62EE6090-CC63-49BA-98B5-7BACF9D704B7}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="M4Single" ID="{3C2F2215-89DE-49F3-8437-D8E01B403AC2}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="stopRocket" ID="{3467EEC2-0371-4AFF-A8B8-94F44A337C2D}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
@@ -87,6 +87,7 @@
 				<SoundBank Name="Alerts" ID="{D6D5599C-55F9-4F91-8C0E-A0B2E0EE2C5C}">
 					<ObjectInclusionList>
 						<ObjectRef Name="playSirenAlarm" ID="{0A4A71F5-BDEB-41CB-9D67-6AA399930940}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="startStarLockOn" ID="{CB7686D0-A2ED-42D6-A5E7-A193D5B62153}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="stopModernAlarm" ID="{A1D46A97-F98C-42EE-9811-A79E464D07A6}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="stopStarAlarm" ID="{3676E01B-A3CA-43B7-BBE3-3551B762FC25}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="startModernAlarm" ID="{05371CAA-A121-4516-8F78-5756C16EE6A5}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
@@ -94,6 +95,7 @@
 						<ObjectRef Name="startEngineSputter" ID="{9D12A3DF-F8DC-47A0-9B88-D7E61476AAF2}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="stopSirenAlarm" ID="{40579724-462D-47F0-9385-72D4A2C9FFF5}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="weaponChange" ID="{11A0017F-2D3F-4907-8A12-3F61AA7667D5}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="stopStarLockOn" ID="{D0F86056-2F38-4B29-A0BC-4A54FB2EB744}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="stopLockOn" ID="{63FE8CBF-CE3F-4B7F-9F4B-0C07D0184D74}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="stopEngineSputter" ID="{3AE0D026-92BE-4BAE-A509-07E3A1F2F663}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="lockOn" ID="{CCBC306A-EA0A-4E8A-8F32-9C8C68B385AC}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>

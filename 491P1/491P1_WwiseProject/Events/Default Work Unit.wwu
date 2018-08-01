@@ -307,6 +307,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="gattlingSingle" ID="{408F0A38-5BEB-4995-9599-530DB086BE36}">
+							<ChildrenList>
+								<Action Name="" ID="{06549271-741E-4B30-8C22-8163A072EBAF}" ShortID="60735655">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="gattlingSingle" ID="{CCF1BE98-B680-45A5-8510-5A0B9E2E5508}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="AIEngines" ID="{7F0C1010-802C-47FA-A2DC-51020EED7689}" ShortID="640416497">
@@ -786,6 +800,34 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="EngineSputter" ID="{7EA3AF61-8918-41FC-862B-D50B2ED805A7}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="startStarLockOn" ID="{CB7686D0-A2ED-42D6-A5E7-A193D5B62153}">
+							<ChildrenList>
+								<Action Name="" ID="{2FB722A6-54C2-4EB6-A3DB-BF2073D5165A}" ShortID="597379694">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Alert2" ID="{043F3287-570C-45B8-908C-4E9E8FD4E5F5}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stopStarLockOn" ID="{D0F86056-2F38-4B29-A0BC-4A54FB2EB744}">
+							<ChildrenList>
+								<Action Name="" ID="{2B7582BC-1592-4DEC-9D34-C748678BD488}" ShortID="904217778">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Alert2" ID="{043F3287-570C-45B8-908C-4E9E8FD4E5F5}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
