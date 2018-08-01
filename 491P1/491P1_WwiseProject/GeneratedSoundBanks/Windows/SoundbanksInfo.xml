@@ -147,11 +147,11 @@
 			<IncludedMemoryFiles>
 				<File Id="805435" Language="SFX">
 					<ShortName>Explosion_02.wav</ShortName>
-					<Path>SFX\Explosion_02_83C1A7CC.wem</Path>
+					<Path>SFX\Explosion_02_BEA24A19.wem</Path>
 				</File>
 				<File Id="34444945" Language="SFX">
 					<ShortName>Explosion_01.wav</ShortName>
-					<Path>SFX\Explosion_01_D8C2AB81.wem</Path>
+					<Path>SFX\Explosion_01_212B3239.wem</Path>
 				</File>
 				<File Id="101869958" Language="SFX">
 					<ShortName>sandExplosion_03.wav</ShortName>
@@ -167,7 +167,7 @@
 				</File>
 				<File Id="241938170" Language="SFX">
 					<ShortName>Explosion_03.wav</ShortName>
-					<Path>SFX\Explosion_03_4E89571D.wem</Path>
+					<Path>SFX\Explosion_03_02759209.wem</Path>
 				</File>
 				<File Id="324887684" Language="SFX">
 					<ShortName>metalExplosion_02.wav</ShortName>
@@ -179,7 +179,7 @@
 				</File>
 				<File Id="409699218" Language="SFX">
 					<ShortName>flakExplosion_01.wav</ShortName>
-					<Path>SFX\flakExplosion_01_BA1C86D7.wem</Path>
+					<Path>SFX\flakExplosion_01_A514076F.wem</Path>
 				</File>
 				<File Id="510195601" Language="SFX">
 					<ShortName>sandExplosion_02.wav</ShortName>
@@ -203,11 +203,11 @@
 				</File>
 				<File Id="891137738" Language="SFX">
 					<ShortName>flakExplosion_02.wav</ShortName>
-					<Path>SFX\flakExplosion_02_A2B36BC5.wem</Path>
+					<Path>SFX\flakExplosion_02_D840BEAD.wem</Path>
 				</File>
 				<File Id="1054171988" Language="SFX">
 					<ShortName>flakExplosion_03.wav</ShortName>
-					<Path>SFX\flakExplosion_03_FBC13481.wem</Path>
+					<Path>SFX\flakExplosion_03_C5460751.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -224,7 +224,7 @@
 			<IncludedMemoryFiles>
 				<File Id="16283810" Language="SFX">
 					<ShortName>starhighSpeedLoop.wav</ShortName>
-					<Path>SFX\starhighSpeedLoop_DC216C09.wem</Path>
+					<Path>SFX\starhighSpeedLoop_E66A5382.wem</Path>
 				</File>
 				<File Id="40730204" Language="SFX">
 					<ShortName>modernHighSpeedLoopV2.wav</ShortName>
@@ -232,11 +232,11 @@
 				</File>
 				<File Id="246546007" Language="SFX">
 					<ShortName>starnormalLoop.wav</ShortName>
-					<Path>SFX\starnormalLoop_C0742F26.wem</Path>
+					<Path>SFX\starnormalLoop_3647FAD5.wem</Path>
 				</File>
 				<File Id="349238628" Language="SFX">
 					<ShortName>starSlowDown.wav</ShortName>
-					<Path>SFX\starSlowDown_04B3A7EC.wem</Path>
+					<Path>SFX\starSlowDown_8EDD403B.wem</Path>
 				</File>
 				<File Id="442376208" Language="SFX">
 					<ShortName>classicslowDown.wav</ShortName>
@@ -252,7 +252,7 @@
 				</File>
 				<File Id="647999113" Language="SFX">
 					<ShortName>starSpeedUp.wav</ShortName>
-					<Path>SFX\starSpeedUp_E5154012.wem</Path>
+					<Path>SFX\starSpeedUp_FC347D27.wem</Path>
 				</File>
 				<File Id="659391842" Language="SFX">
 					<ShortName>classicspeedUp.wav</ShortName>
@@ -343,11 +343,11 @@
 			<IncludedMemoryFiles>
 				<File Id="10769277" Language="SFX">
 					<ShortName>metalSear_02.wav</ShortName>
-					<Path>SFX\metalSear_02_8B34B959.wem</Path>
+					<Path>SFX\metalSear_02_0EB72F55.wem</Path>
 				</File>
 				<File Id="253379395" Language="SFX">
 					<ShortName>sandSear_02.wav</ShortName>
-					<Path>SFX\sandSear_02_32786741.wem</Path>
+					<Path>SFX\sandSear_02_1086B8D9.wem</Path>
 				</File>
 				<File Id="325443002" Language="SFX">
 					<ShortName>MetalHit3.wav</ShortName>
@@ -355,7 +355,7 @@
 				</File>
 				<File Id="344277745" Language="SFX">
 					<ShortName>sandSear_01.wav</ShortName>
-					<Path>SFX\sandSear_01_FA55223C.wem</Path>
+					<Path>SFX\sandSear_01_79FEF128.wem</Path>
 				</File>
 				<File Id="522475909" Language="SFX">
 					<ShortName>sandBullet_04.wav</ShortName>
@@ -379,15 +379,15 @@
 				</File>
 				<File Id="866795515" Language="SFX">
 					<ShortName>metalSear_01.wav</ShortName>
-					<Path>SFX\metalSear_01_205F9E45.wem</Path>
+					<Path>SFX\metalSear_01_43CE5CBD.wem</Path>
 				</File>
 				<File Id="985668054" Language="SFX">
 					<ShortName>metalSear_03.wav</ShortName>
-					<Path>SFX\metalSear_03_9FA5E5F1.wem</Path>
+					<Path>SFX\metalSear_03_F5143E8E.wem</Path>
 				</File>
 				<File Id="988056856" Language="SFX">
 					<ShortName>sandSear_03.wav</ShortName>
-					<Path>SFX\sandSear_03_BEEDF0AD.wem</Path>
+					<Path>SFX\sandSear_03_60557955.wem</Path>
 				</File>
 				<File Id="1050266739" Language="SFX">
 					<ShortName>sandBullet_01.wav</ShortName>
@@ -422,7 +422,7 @@
 			<IncludedMemoryFiles>
 				<File Id="7707695" Language="SFX">
 					<ShortName>flakCannonHeavyV2_03.wav</ShortName>
-					<Path>SFX\flakCannonHeavyV2_03_FB166FA2.wem</Path>
+					<Path>SFX\flakCannonHeavyV2_03_31CF702B.wem</Path>
 				</File>
 				<File Id="106316613" Language="SFX">
 					<ShortName>M4Single_06.wav</ShortName>
@@ -438,7 +438,7 @@
 				</File>
 				<File Id="179010657" Language="SFX">
 					<ShortName>flakCannonv2_03.wav</ShortName>
-					<Path>SFX\flakCannonv2_03_343CCA48.wem</Path>
+					<Path>SFX\flakCannonv2_03_37A34763.wem</Path>
 				</File>
 				<File Id="252142516" Language="SFX">
 					<ShortName>GattlingSingle1.wav</ShortName>
@@ -490,7 +490,7 @@
 				</File>
 				<File Id="758476441" Language="SFX">
 					<ShortName>flakCannonv2_02.wav</ShortName>
-					<Path>SFX\flakCannonv2_02_DDA8FE09.wem</Path>
+					<Path>SFX\flakCannonv2_02_4FE9458A.wem</Path>
 				</File>
 				<File Id="773365146" Language="SFX">
 					<ShortName>flakCannonHeavyV2_01.wav</ShortName>
@@ -653,10 +653,6 @@
 				<File Id="777960268" Language="SFX">
 					<ShortName>FutureMixIntro.wav</ShortName>
 					<Path>SFX\FutureMixIntro_F17FB28C.wem</Path>
-				</File>
-				<File Id="786941442" Language="SFX">
-					<ShortName>ModernStinger1.wav</ShortName>
-					<Path>SFX\ModernStinger1_F17FB28C.wem</Path>
 				</File>
 				<File Id="845299351" Language="SFX">
 					<ShortName>WW2Stinger1.wav</ShortName>

@@ -5,17 +5,17 @@ Event	ID	Name			Wwise Object Path	Notes
 	3381906398	sandSear			\Default Work Unit\Impacts\sandSear	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	10769277	metalSear_02	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\metalSear_02_8B34B959.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\metalSear\metalSear_02		140716
-	253379395	sandSear_02	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\sandSear_02_32786741.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\sandSear\sandSear_02		136728
+	10769277	metalSear_02	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\metalSear_02_0EB72F55.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\metalSear\metalSear_02		140716
+	253379395	sandSear_02	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\sandSear_02_1086B8D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\sandSear\sandSear_02		136728
 	325443002	MetalHit3	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\MetalHit3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\Metal\MetalHit3		42500
-	344277745	sandSear_01	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\sandSear_01_FA55223C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\sandSear\sandSear_01		151812
+	344277745	sandSear_01	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\sandSear_01_79FEF128.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\sandSear\sandSear_01		151812
 	522475909	sandBullet_04	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\sandBullet_04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\Sand\sandBullet_04		186060
 	592069702	sandBullet_03	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\sandBullet_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\Sand\sandBullet_03		165520
 	630939987	sandBullet_02	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\sandBullet_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\Sand\sandBullet_02		130772
 	688253071	MetalHit2	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\MetalHit2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\Metal\MetalHit2		42500
 	824591215	MetalHit1	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\MetalHit1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\Metal\MetalHit1		42500
-	866795515	metalSear_01	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\metalSear_01_205F9E45.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\metalSear\metalSear_01		186428
-	985668054	metalSear_03	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\metalSear_03_9FA5E5F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\metalSear\metalSear_03		140180
-	988056856	sandSear_03	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\sandSear_03_BEEDF0AD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\sandSear\sandSear_03		221604
+	866795515	metalSear_01	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\metalSear_01_43CE5CBD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\metalSear\metalSear_01		186428
+	985668054	metalSear_03	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\metalSear_03_F5143E8E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\metalSear\metalSear_03		140180
+	988056856	sandSear_03	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\sandSear_03_60557955.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\sandSear\sandSear_03		221604
 	1050266739	sandBullet_01	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\sandBullet_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impacts\Sand\sandBullet_01		117744
 

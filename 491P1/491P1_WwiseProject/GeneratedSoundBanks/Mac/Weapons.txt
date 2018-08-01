@@ -20,11 +20,11 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	3008122820	Bullets			\Default Work Unit\Weapons\Bullets	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	7707695	flakCannonHeavyV2_03	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\flakCannonHeavyV2_03_FB166FA2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\heavyCannon\flakCannonHeavyV2_03		254004
+	7707695	flakCannonHeavyV2_03	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\flakCannonHeavyV2_03_31CF702B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\heavyCannon\flakCannonHeavyV2_03		254004
 	106316613	M4Single_06	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\M4Single_06_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\M4Single\M4Single_06		76080
 	151184728	GattlingSingle3	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\GattlingSingle3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\gattlingSingle\GattlingSingle3		66760
 	174423989	BulletLoop	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\BulletLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\BulletLoop		486088
-	179010657	flakCannonv2_03	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\flakCannonv2_03_343CCA48.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Cannon\flakCannonv2_03		203052
+	179010657	flakCannonv2_03	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\flakCannonv2_03_37A34763.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Cannon\flakCannonv2_03		203052
 	252142516	GattlingSingle1	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\GattlingSingle1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\gattlingSingle\GattlingSingle1		81280
 	269941041	missileStart	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\missileStart_E956B8F5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Missiles\missileStart		189956
 	275199293	LaserSingle_03	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\LaserSingle_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\laserSingle\LaserSingle_03		84964
@@ -37,7 +37,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	679313303	LaserSingle_01	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\LaserSingle_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\laserSingle\LaserSingle_01		84964
 	683822974	rocketLoop	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\rocketLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Rockets\rocketLoop		481292
 	737686677	missileLoop	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\missileLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Missiles\missileLoop		334016
-	758476441	flakCannonv2_02	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\flakCannonv2_02_DDA8FE09.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Cannon\flakCannonv2_02		169148
+	758476441	flakCannonv2_02	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\flakCannonv2_02_4FE9458A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Cannon\flakCannonv2_02		169148
 	773365146	flakCannonHeavyV2_01	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\flakCannonHeavyV2_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\heavyCannon\flakCannonHeavyV2_01		263812
 	802380861	flakCannonv2_01	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\flakCannonv2_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Cannon\flakCannonv2_01		174340
 	833945238	M4Single_01	C:\Users\Sup\Documents\GitHub\AirStrikeVR\AirStrikeVR\491P1\491P1_WwiseProject\.cache\Mac\SFX\M4Single_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\M4Single\M4Single_01		67836

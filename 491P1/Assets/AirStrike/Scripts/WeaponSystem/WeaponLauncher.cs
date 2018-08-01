@@ -236,7 +236,7 @@ namespace HWRWeaponSystem
                         if (lockStatus == true)
                         {
                             AkSoundEngine.PostEvent("lockOn", CurrentCamera.gameObject);
-                            previousLockStatus = true;
+                           // previousLockStatus = true;
                             
                         }
 
@@ -246,7 +246,7 @@ namespace HWRWeaponSystem
                         if (lockStatus == false)
                         {
                             AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
-                            previousLockStatus = false;
+                           // previousLockStatus = false;
                             
                         }
 

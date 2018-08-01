@@ -198,6 +198,7 @@ namespace AK
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAYERENGINE = 852736692U;
         static const AkUniqueID RADIOCHATTER = 580025197U;
+        static const AkUniqueID STINGERS = 2940432316U;
         static const AkUniqueID VA = 1534528554U;
         static const AkUniqueID VRBOTENGINE = 182490494U;
         static const AkUniqueID VREXPLOSIONS = 2671005729U;

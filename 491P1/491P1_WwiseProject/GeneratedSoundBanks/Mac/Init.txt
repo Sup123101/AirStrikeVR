@@ -40,6 +40,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2027167704	VRWeapons			\Default Work Unit\Master Audio Bus\Weapons\VRWeapons	
 	2047245040	VRplayerEngine			\Default Work Unit\Master Audio Bus\playerEngine\VRplayerEngine	
 	2671005729	VRExplosions			\Default Work Unit\Master Audio Bus\Explosions\VRExplosions	
+	2940432316	Stingers			\Default Work Unit\Master Audio Bus\Music\Stingers	
 	3249548410	botEngine			\Default Work Unit\Master Audio Bus\botEngine	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	

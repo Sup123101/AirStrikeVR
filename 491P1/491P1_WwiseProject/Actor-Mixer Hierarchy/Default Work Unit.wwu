@@ -2889,6 +2889,11 @@
 									</ModifierList>
 								</Property>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-25</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -2919,7 +2924,7 @@
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-7</Value>
+										<Value>-9</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2956,7 +2961,7 @@
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-18</Value>
+										<Value>-33</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -3078,7 +3083,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-17</Value>
+										<Value>-35</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -3139,7 +3144,7 @@
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-19</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
