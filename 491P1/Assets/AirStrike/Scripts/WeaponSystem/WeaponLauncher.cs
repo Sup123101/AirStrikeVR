@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using System.Collections;
 using Random = UnityEngine.Random;
+using UnityEngine.UI;
 
 namespace HWRWeaponSystem
 {
@@ -67,6 +68,7 @@ namespace HWRWeaponSystem
         public Canvas VRUI;
         public GameObject FlightCamera;
         private WeaponController weapon;
+        public Text ReloadingT;
 
 
 
@@ -165,7 +167,9 @@ namespace HWRWeaponSystem
                 if (musicScript.currentMode == 2)
                 {
                     if (targetBox)
-                        targetBox.gameObject.SetActive(false);
+                    {
+                        // targetBox.gameObject.SetActive(false);
+                    }
                 }
                 
             }
@@ -181,7 +185,20 @@ namespace HWRWeaponSystem
                
             }
             
-
+            if(Reloading)
+            {
+                if (ReloadingT)
+                {
+                    ReloadingT.gameObject.SetActive(true);
+                }
+            }
+            else if (!Reloading)
+              {
+                if (ReloadingT)
+                {
+                    ReloadingT.gameObject.SetActive(false);
+                }
+            }
 
 
             if (CurrentCamera == null) {
