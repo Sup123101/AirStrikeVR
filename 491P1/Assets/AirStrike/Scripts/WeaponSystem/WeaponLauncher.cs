@@ -69,6 +69,7 @@ namespace HWRWeaponSystem
         public GameObject FlightCamera;
         private WeaponController weapon;
         public Text ReloadingT;
+        public Image targetColor;
 
 
 
@@ -169,6 +170,7 @@ namespace HWRWeaponSystem
                     if (targetBox)
                     {
                         // targetBox.gameObject.SetActive(false);
+                        targetColor.color = Color.green;
                     }
                 }
                 
@@ -180,7 +182,10 @@ namespace HWRWeaponSystem
                 if (musicScript.currentMode == 2)
                 {
                     if (targetBox)
+                    {
                         targetBox.gameObject.SetActive(true);
+                        targetColor.color = Color.red;
+                    }
                 }
                
             }
