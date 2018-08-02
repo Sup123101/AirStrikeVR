@@ -154,6 +154,9 @@ namespace HWRWeaponSystem
 		{
             AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
             AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject);
+            targetBox.gameObject.SetActive(false);
+            ReloadingT.gameObject.SetActive(false);
+
         }
 		private void OnApplicationPause(bool pause)
 		{
@@ -170,10 +173,16 @@ namespace HWRWeaponSystem
                     if (targetBox)
                     {
                         // targetBox.gameObject.SetActive(false);
+                       
+                    }
+                    if (targetColor)
+                    {
+
                         targetColor.color = Color.green;
                     }
                 }
                 
+
             }
             else if(amountlockedPrevious != 0)
             {
@@ -184,25 +193,41 @@ namespace HWRWeaponSystem
                     if (targetBox)
                     {
                         targetBox.gameObject.SetActive(true);
+                        
+                    }
+                    if (targetColor)
+                    {
+
                         targetColor.color = Color.red;
                     }
                 }
                
+
             }
-            
-            if(Reloading)
+            if (OnActive)
             {
-                if (ReloadingT)
+                if (Reloading && OnActive)
                 {
-                    ReloadingT.gameObject.SetActive(true);
+                    if (ReloadingT)
+                    {
+                        ReloadingT.gameObject.SetActive(true);
+                    }
+                }
+                else if (!Reloading)
+                {
+                    if (ReloadingT)
+                    {
+                        ReloadingT.gameObject.SetActive(false);
+                    }
                 }
             }
-            else if (!Reloading)
-              {
+            else if (OnActive != true)
+            {
                 if (ReloadingT)
                 {
                     ReloadingT.gameObject.SetActive(false);
                 }
+                
             }
 
 
@@ -231,6 +256,7 @@ namespace HWRWeaponSystem
                         if (targetBox)
                             targetBox.gameObject.SetActive(true);
                     }
+                    
 
                 }
                 if (lockstatusStarPrevious == true)
@@ -245,6 +271,7 @@ namespace HWRWeaponSystem
                             targetBox.gameObject.SetActive(false);
 
                     }
+                    
 
                 }
             }
@@ -261,6 +288,7 @@ namespace HWRWeaponSystem
                            // previousLockStatus = true;
                             
                         }
+                       
 
                     }
                     if (previousLockStatus == true)
@@ -271,6 +299,7 @@ namespace HWRWeaponSystem
                            // previousLockStatus = false;
                             
                         }
+                        
 
                     }
                 }
