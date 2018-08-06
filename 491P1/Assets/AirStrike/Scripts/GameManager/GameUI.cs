@@ -92,10 +92,14 @@ namespace AirStrikeKit
             if (Input.GetKeyDown("joystick button 12"))
                     {
                         Mode = 2;
-                    }  
+                    }
+            if (Input.GetKeyDown("joystick button 2"))
+            {
+                Mode = 2;
+            }
             if (sceneChange == true)
             {
-                if (Input.GetAxis("Mouse Y") == -0.7f && canInteract == true)
+                if (Input.GetAxis("Mouse Y") <= -0.7f && canInteract == true)
             {
                 canInteract = false;
                 selectedIndex = menuSelection(menuOptions, selectedIndex, "down");
@@ -103,21 +107,43 @@ namespace AirStrikeKit
                 StartCoroutine(MenuChange(.33f));
             }
                 //for MAC, change Mouse Y to Axis 3, windows Axis 6
-            if (Input.GetAxis("Mouse Y") == 0.7f && canInteract == true)
+                //this is for gamepad
+            if (Input.GetAxis("Mouse Y") >= 0.7f && canInteract == true)
             { 
                 canInteract = false;
                 selectedIndex = menuSelection(menuOptions, selectedIndex, "up");
                 StartCoroutine(MenuChange(.33f));
             }
+                //for vr use only
 
-            if (Input.GetKeyDown("joystick button 0"))
+                if (Input.GetAxis("Mouse YVR") <= -0.85f && Input.GetAxis("Mouse YVR") != -1.0f && canInteract == true)
+                {
+                    canInteract = false;
+                    selectedIndex = menuSelection(menuOptions, selectedIndex, "down");
+
+                    StartCoroutine(MenuChange(.33f));
+                }
+                if (Input.GetAxis("Mouse YVR") >= 0.85f && Input.GetAxis("Mouse YVR") != 1.0f && canInteract == true)
+                {
+                    canInteract = false;
+                    selectedIndex = menuSelection(menuOptions, selectedIndex, "up");
+                    StartCoroutine(MenuChange(.33f));
+                }
+                
+                if (Input.GetKeyDown("joystick button 0"))
             {
                 handleSelection();
                
             } 
             }
+            if ((Input.GetKeyDown("joystick button 9")))
+            {
 
-		}
+                handleSelection();
+
+            }
+
+        }
         void handleSelection()
         {
             GUI.FocusControl(menuOptions[selectedIndex]);

@@ -93,7 +93,7 @@ public class MainMenuVR : MonoBehaviour {
             }
         }
 
-        if (Input.GetAxis("Mouse Y") == -0.7f && canInteract == true)
+        if (Input.GetAxis("Mouse Y") <= -0.7f && canInteract == true)
         {
             canInteract = false;
             selectedIndex = menuSelection(menuOptions, selectedIndex, "down");
@@ -101,19 +101,46 @@ public class MainMenuVR : MonoBehaviour {
             StartCoroutine(MenuChange(.33f));
         }
 
-        if (Input.GetAxis("Mouse Y") == 0.7f && canInteract == true)
+        if (Input.GetAxis("Mouse Y") >= 0.7f && canInteract == true)
         {
             canInteract = false;
             selectedIndex = menuSelection(menuOptions, selectedIndex, "up");
             StartCoroutine(MenuChange(.33f));
         }
-
+        
         if (Input.GetKeyDown("joystick button 0"))
         {
             handleSelection();
 
         }
+        if ((Input.GetKeyDown("joystick button 9")))
+        {
 
+            handleSelection();
+
+        }
+        if (Input.GetMouseButtonDown(0))
+        {
+            handleSelection();
+        }
+            //print("Mouse Y is " + Input.GetAxis("Mouse YVR"));
+        //print("Mouse Y2 is " + Input.GetAxis("Mouse Y"));
+        
+        if (Input.GetAxis("Mouse YVR") <= -0.85f && Input.GetAxis("Mouse YVR") != -1.0f && canInteract == true)
+        {
+            canInteract = false;
+            selectedIndex = menuSelection(menuOptions, selectedIndex, "down");
+
+            StartCoroutine(MenuChange(.33f));
+        }
+        if (Input.GetAxis("Mouse YVR") >= 0.85f && Input.GetAxis("Mouse YVR") != 1.0f && canInteract == true)
+        {
+            canInteract = false;
+            selectedIndex = menuSelection(menuOptions, selectedIndex, "up");
+            StartCoroutine(MenuChange(.33f));
+        }
+        
+        
     }
     void handleSelection()
     {

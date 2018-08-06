@@ -35,10 +35,12 @@ namespace AirStrikeKit
         public bool currentAccel = false;
         public bool previousAccel = false;
         public bool previousWeapon1 = false;
+        public bool previousWeaponVR = false;
         public GameObject musicManager;
         private MusicManager musicScript;
         public GameObject playerEngineAudio;
         public bool isPlayer;
+        private bool canChangeWeapon = true;
 
 		void Awake(){
             UnityEngine.XR.InputTracking.disablePositionalTracking = true;
@@ -164,13 +166,25 @@ namespace AirStrikeKit
 		
 			// lock mouse position to the center.
 			MouseLock.MouseLocked = true;
-		
-			flight.AxisControl (new Vector2 (Input.GetAxis ("Mouse X"), Input.GetAxis ("Mouse Y")));
-            //flight.AxisControl(new Vector2(Input.GetAxis("X-Axis"), Input.GetAxis("Y-Axis")));
+            //print("Mouse X is " + Input.GetAxis("Mouse XVR"));
+            if (Input.GetAxis("Mouse YVR") != 0.0f && Input.GetAxis("Mouse XVR") != 0.0f && Input.GetAxis("Mouse XVR") != -1.0f && Input.GetAxis("Mouse XVR") != -1.0f)
+            {
+                flight.AxisControl(new Vector2(Input.GetAxis("Mouse XVR"), Input.GetAxis("Mouse YVR")));
+                if (SimpleControl)
+                {
+                    flight.TurnControl(Input.GetAxis("Mouse XVR"));
+                }
+            }
+            else
+            {
+                flight.AxisControl(new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")));
+                //flight.AxisControl(new Vector2(Input.GetAxis("X-Axis"), Input.GetAxis("Y-Axis")));
 
-			if (SimpleControl) {
-				flight.TurnControl (Input.GetAxis ("Mouse X"));
-			} 
+                if (SimpleControl)
+                {
+                    flight.TurnControl(Input.GetAxis("Mouse X"));
+                }
+            }
 
 			flight.TurnControl (Input.GetAxis ("Horizontal"));
 			flight.SpeedUp (Input.GetAxis ("Vertical"));
@@ -195,38 +209,67 @@ namespace AirStrikeKit
                     musicScript.playStinger();
                 }
 			}
+            if (Input.GetAxis("TriggerR") == 1.0f)
+            {
+
+                flight.WeaponControl.LaunchWeapon();
+                if (previousWeaponVR == false)
+                {
+                    previousWeaponVR = true;
+                    musicScript.playStinger();
+                }
+
+            }
             if ((Input.GetButton("Fire1")) == false)
             {
 
                 if (previousWeapon1 == true)
                 {
                     previousWeapon1 = false;
-                    //print("stopped fireing");
+                    //print("stopped firing normal");
                 }
 
             }
-           
-           
+            if ((Input.GetAxis("TriggerR")) == 0.0f)
+            {
 
-		
-			if (Input.GetButtonDown ("Fire2")) {
+                if (previousWeaponVR == true)
+                {
+                    previousWeaponVR = false;
+                    print("stopped fireing");
+                }
+
+            }
+
+
+
+
+            if (Input.GetButtonDown ("Fire2")) {
 				flight.WeaponControl.SwitchWeapon ();
 
 			}
-		    /*
+            //print("getaxis" + Input.GetAxis("TriggerL"));
+            if ((Input.GetAxis("TriggerL")) == 1.0f && canChangeWeapon == true)
+            {
+                canChangeWeapon = false;
+                StartCoroutine(WeaponChangeTimer(.33f));
+                flight.WeaponControl.SwitchWeapon();
+
+            }
+            /*
 			if (Input.GetKeyDown (KeyCode.C)) {
 				if (View)
 					View.SwitchCameras ();	
 			}	
             */
-            if (Input.GetKeyDown("joystick button 0"))
-            {
-               // UnityEngine.XR.InputTracking.Recenter();
-                //if(activeDevice.deviceName == "OpenVR")
-                /*if (View)
-                    View.SwitchCameras ();  */
-            }
-		}
+            //if (Input.GetKeyDown("joystick button 0"))
+            //{
+            // UnityEngine.XR.InputTracking.Recenter();
+            //if(activeDevice.deviceName == "OpenVR")
+            /*if (View)
+                View.SwitchCameras ();  */
+            //}
+        }
 
 		void MobileController ()
 		{
@@ -265,9 +308,9 @@ namespace AirStrikeKit
 		
 			}	
 		}
-	
-	
-		// you can remove this part..
+
+
+        // you can remove this part..
         /*
 		void OnGUI ()
 		{
@@ -298,5 +341,13 @@ namespace AirStrikeKit
 
 			GUI.Label (new Rect (20, 350, 500, 40), "you can remove this in OnGUI in PlayerController.cs");
 		} */
-	}
+        IEnumerator WeaponChangeTimer(float time)
+        {
+
+
+            yield return new WaitForSecondsRealtime(time);  // I suggest decreasing the time here. One second for each button is quite a long time, which I'm sure you already know.
+            canChangeWeapon = true;
+        }
+    }
+    
 }

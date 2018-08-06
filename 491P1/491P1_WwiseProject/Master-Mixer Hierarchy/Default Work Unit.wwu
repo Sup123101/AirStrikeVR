@@ -4,13 +4,6 @@
 		<WorkUnit Name="Default Work Unit" ID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
-					<PropertyList>
-						<Property Name="BusVolume" Type="Real64">
-							<ValueList>
-								<Value>-3</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{6E45B4EF-D09E-4C6E-9F06-0C542B9E1118}" WorkUnitID="{3913C16D-B34C-49D8-B63D-87B01F28BF70}"/>
@@ -47,7 +40,7 @@
 										<State Name="" ID="{7AB7E76D-6C08-4C9B-8E96-56A734012E30}" ShortID="898733376">
 											<PropertyList>
 												<Property Name="BusVolume" Type="Real64" Value="-2"/>
-												<Property Name="Lowpass" Type="int16" Value="35"/>
+												<Property Name="Lowpass" Type="int16" Value="32"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -87,7 +80,7 @@
 										<State Name="" ID="{B2FF375B-6A48-4CDF-9EDC-1AF16610E48A}" ShortID="358267488">
 											<PropertyList>
 												<Property Name="BusVolume" Type="Real64" Value="-2"/>
-												<Property Name="Lowpass" Type="int16" Value="35"/>
+												<Property Name="Lowpass" Type="int16" Value="27"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -136,7 +129,7 @@
 										<State Name="" ID="{FFA53741-1E24-4F80-8436-C9C30D410619}" ShortID="260395234">
 											<PropertyList>
 												<Property Name="BusVolume" Type="Real64" Value="-2"/>
-												<Property Name="Lowpass" Type="int16" Value="35"/>
+												<Property Name="Lowpass" Type="int16" Value="32"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -171,7 +164,7 @@
 										<State Name="" ID="{BBFAB50F-CE21-4459-ADB7-9A100BC55E75}" ShortID="112750970">
 											<PropertyList>
 												<Property Name="BusVolume" Type="Real64" Value="-2"/>
-												<Property Name="Lowpass" Type="int16" Value="35"/>
+												<Property Name="Lowpass" Type="int16" Value="32"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -292,7 +285,7 @@
 										<State Name="" ID="{FDF3B61A-E2F8-4467-8CD9-997EF81E3FDE}" ShortID="307941806">
 											<PropertyList>
 												<Property Name="BusVolume" Type="Real64" Value="-2"/>
-												<Property Name="Lowpass" Type="int16" Value="35"/>
+												<Property Name="Lowpass" Type="int16" Value="32"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -327,7 +320,7 @@
 										<State Name="" ID="{1BFB1D6C-8763-48A1-9DA1-4561FFC51EB3}" ShortID="398242155">
 											<PropertyList>
 												<Property Name="BusVolume" Type="Real64" Value="-2"/>
-												<Property Name="Lowpass" Type="int16" Value="35"/>
+												<Property Name="Lowpass" Type="int16" Value="32"/>
 											</PropertyList>
 										</State>
 									</CustomState>
