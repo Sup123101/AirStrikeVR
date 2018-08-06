@@ -250,6 +250,7 @@ namespace HWRWeaponSystem
                 {
                     if (lockstatusStar == true)
                     {
+                        StartCoroutine(timedLockOnStop(5.0f));
                         AkSoundEngine.PostEvent("lockOn", CurrentCamera.gameObject);
                         AkSoundEngine.PostEvent("startStarLockOn", CurrentCamera.gameObject);
                         lockstatusStarPrevious = true;
@@ -284,6 +285,7 @@ namespace HWRWeaponSystem
                     {
                         if (lockStatus == true)
                         {
+                            StartCoroutine(timedLockOnStop(5.0f));
                             AkSoundEngine.PostEvent("lockOn", CurrentCamera.gameObject);
                            // previousLockStatus = true;
                             
@@ -689,5 +691,13 @@ namespace HWRWeaponSystem
 			Gizmos.DrawLine (this.transform.position + (-this.transform.right * 0.1f), this.transform.position + this.transform.forward * 2);
 			Gizmos.DrawLine (this.transform.position, this.transform.position + this.transform.forward * 2);
 		}
-	}
+        IEnumerator timedLockOnStop(float time)
+        {
+
+
+            yield return new WaitForSecondsRealtime(time);  // I suggest decreasing the time here. One second for each button is quite a long time, which I'm sure you already know.
+            AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
+            AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject);
+        }
+    }
 }

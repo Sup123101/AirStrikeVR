@@ -29,7 +29,7 @@
 					</ValueList>
 				</Property>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
-				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
+				<Property Name="General\LatestPlatform" Type="string" Value="Windows"/>
 				<Property Name="GenerateSoundBanks\ListMode" Type="string" Value="Tree"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="bIBgSS/C30SBtFmM7bxQ8EWNXCTQ4cdMmESx1RU9jG4="/>
