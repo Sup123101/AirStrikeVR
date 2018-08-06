@@ -4,7 +4,8 @@ VR version of Airstrike game with Wwise Integration\
 -Uses Unity OpenXR/VR \
 -Requires PS4 Controller, HTC Vive HMD, Vive Controllers Scheme also available(not as recommended)\
 -Built with Unity 2018 2.1f1 and Wwise 2017 2.6.6636\
--Redone GUI by Canvas system instead of Older GUI Unity Commands.
+-Redone GUI by Canvas system instead of Older GUI Unity Commands.\
+-Best not to have both PS4 and vive controllers actively attached at same time\
 
 Controls:
 Type 1: Mouse to aim and move, Left Click to Fire, Right Click to Switch Weapon, C to Change Camera\
