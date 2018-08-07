@@ -84,11 +84,12 @@ namespace AirStrikeKit
         }
 		 void Update()
 		{
-           // print("Mode is " + Mode);
+            // print("Mode is " + Mode);
             //print("selected index is " + selectedIndex);
             //print("state of change is " + sceneChange);
-            
-            
+
+            //print("value of joy stick is Y " + Input.GetAxis("Mouse Y"));
+            //print("value of joy stick is YVR" + Input.GetAxis("Mouse YVR"));
             if (Input.GetKeyDown("joystick button 12"))
                     {
                         Mode = 2;

@@ -116,8 +116,8 @@ namespace AirStrikeKit
         }
         void Update()
         {
-           // print("value of joy stick is Y " + Input.GetAxis("Mouse Y"));
-            //print("value of joy stick is X" + Input.GetAxis("Mouse X"));
+            //print("value of joy stick is Y " + Input.GetAxis("Mouse Y"));
+            //print("value of joy stick is YVR" + Input.GetAxis("Mouse YVR"));
 
 
             if (Input.GetAxis("Mouse Y") == -0.7f && canInteract == true)

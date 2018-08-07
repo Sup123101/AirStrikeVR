@@ -30,7 +30,7 @@ namespace AirStrikeKit
 		{
 			//indexCamera += 1;
             indexCamera = 1;
-            print("index camera is : " + indexCamera);
+            //print("index camera is : " + indexCamera);
             /*if (indexCamera == 1)
             {
                 AkSoundEngine.SetState("View", "Cockpit");
