@@ -4,21 +4,21 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Alerts" Hash="3247194053" Timestamp="1533178964"/>
-				<File Name="Explosions" Hash="4008641325" Timestamp="1533504003"/>
+				<File Name="Explosions" Hash="1073989218" Timestamp="1533614589"/>
 				<File Name="FX" Hash="1209172748" Timestamp="1533182347"/>
 				<File Name="Impacts" Hash="1873585445" Timestamp="1533178945"/>
 				<File Name="Init" Hash="3168946293" Timestamp="1533533196"/>
 				<File Name="Music" Hash="819504134" Timestamp="1533182255"/>
 				<File Name="VA" Hash="219137957" Timestamp="1533143813"/>
 				<File Name="Weapons" Hash="2486240304" Timestamp="1533184361"/>
-				<File Name="aiEngines" Hash="364234893" Timestamp="1533184967"/>
+				<File Name="aiEngines" Hash="99021042" Timestamp="1533614589"/>
 				<File Name="playerEngine" Hash="1565473101" Timestamp="1533179622"/>
 				<File Name="radioChatter" Hash="2011104789" Timestamp="1533178769"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3938071930" Timestamp="1533533196"/>
+				<File Name="" Hash="3938071930" Timestamp="1533614589"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -26,21 +26,21 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Alerts" Hash="3247194053" Timestamp="1533178964"/>
-				<File Name="Explosions" Hash="4008641325" Timestamp="1533504004"/>
+				<File Name="Explosions" Hash="1073989218" Timestamp="1533614589"/>
 				<File Name="FX" Hash="1209172748" Timestamp="1533182347"/>
 				<File Name="Impacts" Hash="1873585445" Timestamp="1533178945"/>
 				<File Name="Init" Hash="1636063759" Timestamp="1533533196"/>
 				<File Name="Music" Hash="819504134" Timestamp="1533182255"/>
 				<File Name="VA" Hash="219137957" Timestamp="1533143813"/>
 				<File Name="Weapons" Hash="2486240304" Timestamp="1533184361"/>
-				<File Name="aiEngines" Hash="364234893" Timestamp="1533184968"/>
+				<File Name="aiEngines" Hash="99021042" Timestamp="1533614589"/>
 				<File Name="playerEngine" Hash="1565473101" Timestamp="1533179623"/>
 				<File Name="radioChatter" Hash="2011104789" Timestamp="1533178769"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3849597856" Timestamp="1533533196"/>
+				<File Name="" Hash="3849597856" Timestamp="1533614589"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

@@ -70,7 +70,10 @@ namespace HWRWeaponSystem
         private WeaponController weapon;
         public Text ReloadingT;
         public Image targetColor;
-
+        public Camera cam1;
+        public Camera cam2;
+        public Camera cam3;
+        public Camera cam4;
 
 
         private void Start ()
@@ -696,8 +699,28 @@ namespace HWRWeaponSystem
 
 
             yield return new WaitForSecondsRealtime(time);  // I suggest decreasing the time here. One second for each button is quite a long time, which I'm sure you already know.
-            AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
-            AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject);
+            if (cam1 != null)
+            {
+                AkSoundEngine.PostEvent("stopLockOn", cam1.gameObject); //stop the sound
+                AkSoundEngine.PostEvent("stopStarLockOn", cam1.gameObject);
+            }
+            if (cam2 != null)
+            {
+                AkSoundEngine.PostEvent("stopLockOn", cam2.gameObject); //stop the sound
+                AkSoundEngine.PostEvent("stopStarLockOn", cam2.gameObject);
+
+            }
+            if (cam3 != null)
+            {
+                AkSoundEngine.PostEvent("stopLockOn", cam3.gameObject); //stop the sound
+                AkSoundEngine.PostEvent("stopStarLockOn", cam3.gameObject);
+
+            }
+            if (cam4 != null)
+            {
+                AkSoundEngine.PostEvent("stopLockOn", cam4.gameObject); //stop the sound
+                AkSoundEngine.PostEvent("stopStarLockOn", cam4.gameObject);
+            }
         }
     }
 }
