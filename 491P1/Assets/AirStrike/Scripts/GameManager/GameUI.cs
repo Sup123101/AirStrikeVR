@@ -377,9 +377,14 @@ namespace AirStrikeKit
                     menuOptions[1] = "Main menu";
                    
 				Time.timeScale = 0;
-
-                    Resume.SetActive(true);
+                    if (Resume)
+                    {
+                        Resume.SetActive(true);
+                    }
+                    if(Restart)
+                    { 
                     Restart.SetActive(false);
+                        }
                     GUI.skin.label.alignment = TextAnchor.MiddleCenter;
 				GUI.Label (new Rect (0, Screen.height / 2 + 10, Screen.width, 30), "Pause");
 				if (musicpaused == false) {

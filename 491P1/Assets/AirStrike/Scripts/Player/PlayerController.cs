@@ -81,7 +81,10 @@ namespace AirStrikeKit
 		private void OnDestroy()
 		{
             AkSoundEngine.PostEvent("stopPEngine", playerEngineAudio);
-            Restart.SetActive(true);
+            if (Restart)
+            {
+                Restart.SetActive(true);
+            }
 		}
 		void Update ()
 		{
@@ -236,7 +239,7 @@ namespace AirStrikeKit
                 if (previousWeaponVR == true)
                 {
                     previousWeaponVR = false;
-                    print("stopped fireing");
+                    //print("stopped fireing");
                 }
 
             }

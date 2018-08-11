@@ -46,7 +46,7 @@ public class starAllyDoppler : MonoBehaviour {
 	{
         AkSoundEngine.PostEvent("stopStarAllyEngine", gameObject);
 	}
-	// Update is called once per frame
+	
 	void FixedUpdate () {
 
         var playerF = Listener;
@@ -62,7 +62,7 @@ public class starAllyDoppler : MonoBehaviour {
             Vector3 listenerSpeed = (listenerLastPosition - player.transform.position) / Time.fixedDeltaTime;
             listenerLastPosition = player.transform.position;
 
-            // do doppler calc -  (OpenAL's implementation of doppler)
+            // do doppler calculations
             var distance = (player.transform.position - transform.position); // source to listener vector
             var listenerRelativeSpeed = Vector3.Dot(distance, listenerSpeed) / distance.magnitude;
             var emitterRelativeSpeed = Vector3.Dot(distance, emitterSpeed) / distance.magnitude;
@@ -70,8 +70,8 @@ public class starAllyDoppler : MonoBehaviour {
             emitterRelativeSpeed = Mathf.Min(emitterRelativeSpeed, (SpeedOfSound / DopplerFactor));
             var dopplerPitch = (SpeedOfSound + (listenerRelativeSpeed * DopplerFactor)) / (SpeedOfSound + (emitterRelativeSpeed * DopplerFactor));
 
-            // pass the dopplerPitch through to an RTPC in Wwise (or do whatever you want with the value!)
-            AkSoundEngine.SetRTPCValue("starFighterDoppler", dopplerPitch, gameObject); // "DopplerParam" is the name of the RTPC in the Wwise project :)
+            
+            AkSoundEngine.SetRTPCValue("starFighterDoppler", dopplerPitch, gameObject); 
 
         }
         else if (playerF == null)
@@ -94,8 +94,8 @@ public class starAllyDoppler : MonoBehaviour {
             emitterRelativeSpeed = Mathf.Min(emitterRelativeSpeed, (SpeedOfSound / DopplerFactor));
             var dopplerPitch = (SpeedOfSound + (listenerRelativeSpeed * DopplerFactor)) / (SpeedOfSound + (emitterRelativeSpeed * DopplerFactor));
 
-            // pass the dopplerPitch through to an RTPC in Wwise (or do whatever you want with the value!)
-            AkSoundEngine.SetRTPCValue("starFighterDoppler", dopplerPitch, gameObject); // "DopplerParam" is the name of the RTPC in the Wwise project :)
+           
+            AkSoundEngine.SetRTPCValue("starFighterDoppler", dopplerPitch, gameObject); 
         }
 
     }

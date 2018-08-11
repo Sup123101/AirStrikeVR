@@ -48,8 +48,8 @@ public class starEnemyDoppler : MonoBehaviour {
             AkSoundEngine.PostEvent("stopStarEnemyEngine", gameObject);
         
 	}
-	// Update is called once per frame
-	void FixedUpdate () {
+    //Find the player (or default camera if player is dead) and calculate to create doppler effect
+    void FixedUpdate () {
 
         var playerF = Listener;
 

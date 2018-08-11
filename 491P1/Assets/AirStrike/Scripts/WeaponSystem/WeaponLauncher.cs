@@ -150,21 +150,36 @@ namespace HWRWeaponSystem
 		}
 		private void OnDestroy()
 		{
-            AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
-            AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject);
+            if (CurrentCamera)
+            {
+                AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
+                AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject);
+            }
 		}
 		private void OnDisable()
 		{
-            AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
-            AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject);
-            targetBox.gameObject.SetActive(false);
-            ReloadingT.gameObject.SetActive(false);
+            if (CurrentCamera)
+            {
+                AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
+                AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject);
+                if (targetBox)
+                {
+                    targetBox.gameObject.SetActive(false);
+                }
+                if (ReloadingT)
+                {
+                    ReloadingT.gameObject.SetActive(false);
+                }
+            }
 
         }
 		private void OnApplicationPause(bool pause)
 		{
-            AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
-            AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject);
+            if (CurrentCamera)
+            {
+                AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
+                AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject);
+            }
         }
 		private void Update ()
 		{
