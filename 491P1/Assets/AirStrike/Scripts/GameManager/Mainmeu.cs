@@ -197,8 +197,8 @@ namespace AirStrikeKit
             if (skin)
 				GUI.skin = skin;
 		
-			GUI.DrawTexture (new Rect (Screen.width / 2 - Logo.width / 2, Screen.height / 2 - 150, Logo.width, Logo.height), Logo);
-            GUI.SetNextControlName("Classic");
+			//GUI.DrawTexture (new Rect (Screen.width / 2 - Logo.width / 2, Screen.height / 2 - 150, Logo.width, Logo.height), Logo);
+            //GUI.SetNextControlName("Classic");
             if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 50, 300, 40), "Classic")) {
 				//print ("chosen classic mode");
 				//AkSoundEngine.SetSwitch ("Music", "Classic", uniListener);

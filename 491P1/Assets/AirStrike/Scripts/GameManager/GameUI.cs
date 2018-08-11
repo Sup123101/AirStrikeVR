@@ -201,22 +201,28 @@ namespace AirStrikeKit
                     if (AirStrikeGame.playerController) {
                         
                         AirStrikeGame.playerController.Active = true;
-                        Resume.SetActive(false);
-                        Restart.SetActive(false);
-                        GUI.skin.label.alignment = TextAnchor.UpperLeft;
-					GUI.skin.label.fontSize = 30;
-					GUI.Label (new Rect (20, 20, 200, 50), "Kills " + AirStrikeGame.gameManager.Killed.ToString ());
-					GUI.Label (new Rect (20, 60, 200, 50), "Score " + AirStrikeGame.gameManager.Score.ToString ());
+                        if (Resume)
+                        {
+                            Resume.SetActive(false);
+                        }
+                        if (Restart)
+                        {
+                            Restart.SetActive(false);
+                        }
+                        //GUI.skin.label.alignment = TextAnchor.UpperLeft;
+					//GUI.skin.label.fontSize = 30;
+					//GUI.Label (new Rect (20, 20, 200, 50), "Kills " + AirStrikeGame.gameManager.Killed.ToString ());
+					//GUI.Label (new Rect (20, 60, 200, 50), "Score " + AirStrikeGame.gameManager.Score.ToString ());
                     kills.text = "Kills: " + AirStrikeGame.gameManager.Killed.ToString();
                     hitpoint.text = "HP: " + AirStrikeGame.playerController.GetComponent<DamageManager>().HP;
 
-                    GUI.skin.label.alignment = TextAnchor.UpperRight;
-					GUI.Label (new Rect (Screen.width - 220, 20, 200, 50), "ARMOR " + AirStrikeGame.playerController.GetComponent<DamageManager> ().HP);
-					GUI.skin.label.fontSize = 16;
+                    //GUI.skin.label.alignment = TextAnchor.UpperRight;
+					//GUI.Label (new Rect (Screen.width - 220, 20, 200, 50), "ARMOR " + AirStrikeGame.playerController.GetComponent<DamageManager> ().HP);
+					//GUI.skin.label.fontSize = 16;
 				
 		             //weapon.currentWeapon
 					if (weapon.WeaponLists [weapon.CurrentWeapon].Icon)
-						GUI.DrawTexture (new Rect (Screen.width - 100, Screen.height - 100, 80, 80), weapon.WeaponLists [weapon.CurrentWeapon].Icon);
+						//GUI.DrawTexture (new Rect (Screen.width - 100, Screen.height - 100, 80, 80), weapon.WeaponLists [weapon.CurrentWeapon].Icon);
 				    if(weapon.CurrentWeapon == 0)
                         {
                             if (W1)
@@ -294,18 +300,18 @@ namespace AirStrikeKit
                                 W4.enabled = true;
                             }
                         }
-					GUI.skin.label.alignment = TextAnchor.UpperRight;
+					//GUI.skin.label.alignment = TextAnchor.UpperRight;
 					if (weapon.WeaponLists [weapon.CurrentWeapon].Ammo <= 0 && weapon.WeaponLists [weapon.CurrentWeapon].ReloadingProcess > 0) {
-						if (!weapon.WeaponLists [weapon.CurrentWeapon].InfinityAmmo)
-							GUI.Label (new Rect (Screen.width - 230, Screen.height - 120, 200, 30), "Reloading " + Mathf.Floor ((1 - weapon.WeaponLists [weapon.CurrentWeapon].ReloadingProcess) * 100) + "%");
+                            if (!weapon.WeaponLists[weapon.CurrentWeapon].InfinityAmmo) { }
+							//GUI.Label (new Rect (Screen.width - 230, Screen.height - 120, 200, 30), "Reloading " + Mathf.Floor ((1 - weapon.WeaponLists [weapon.CurrentWeapon].ReloadingProcess) * 100) + "%");
 					} else {
-						if (!weapon.WeaponLists [weapon.CurrentWeapon].InfinityAmmo)
-							GUI.Label (new Rect (Screen.width - 230, Screen.height - 120, 200, 30), weapon.WeaponLists [weapon.CurrentWeapon].Ammo.ToString ());
+                            if (!weapon.WeaponLists[weapon.CurrentWeapon].InfinityAmmo) { }
+							//GUI.Label (new Rect (Screen.width - 230, Screen.height - 120, 200, 30), weapon.WeaponLists [weapon.CurrentWeapon].Ammo.ToString ());
 					}
 	
 				
-					GUI.skin.label.alignment = TextAnchor.UpperLeft;
-					GUI.Label (new Rect (20, Screen.height - 50, 250, 30), "R Mouse : Switch Guns C : Change Camera");
+					//GUI.skin.label.alignment = TextAnchor.UpperLeft;
+					//GUI.Label (new Rect (20, Screen.height - 50, 250, 30), "R Mouse : Switch Guns C : Change Camera");
 			
 				} else {
 					AirStrikeGame.playerController = (PlayerController)GameObject.FindObjectOfType (typeof(PlayerController));
@@ -321,8 +327,8 @@ namespace AirStrikeKit
 				MouseLock.MouseLocked = false;
                     sceneChange = true;
                     
-                    GUI.skin.label.alignment = TextAnchor.MiddleCenter;
-				GUI.Label (new Rect (0, Screen.height / 2 + 10, Screen.width, 30), "Game Over");
+                   // GUI.skin.label.alignment = TextAnchor.MiddleCenter;
+				//GUI.Label (new Rect (0, Screen.height / 2 + 10, Screen.width, 30), "Game Over");
                     
                     if (musicpaused == false) {
 					musicScript.pauseMusic ();
@@ -331,8 +337,8 @@ namespace AirStrikeKit
                     menuOptions[0] = "Restart";
                     menuOptions[1] = "Main menu";
                     
-                    GUI.DrawTexture (new Rect (Screen.width / 2 - Logo.width / 2, Screen.height / 2 - 150, Logo.width, Logo.height), Logo);
-                    GUI.SetNextControlName("Restart");
+                   // GUI.DrawTexture (new Rect (Screen.width / 2 - Logo.width / 2, Screen.height / 2 - 150, Logo.width, Logo.height), Logo);
+                    //GUI.SetNextControlName("Restart");
 				if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 50, 300, 40), "Restart")) {
 					
 					musicScript.playModeMusic ();
@@ -341,7 +347,7 @@ namespace AirStrikeKit
                        
 			
 				}
-                    GUI.SetNextControlName("Main menu");
+                    //GUI.SetNextControlName("Main menu");
 				if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 100, 300, 40), "Main menu")) {
 					
 					musicScript.resumeMusic ();
@@ -363,7 +369,7 @@ namespace AirStrikeKit
                         RRestart.OnDeselect(null);
                         RMainMenu.OnSelect(null);
                     }
-                    GUI.FocusControl(menuOptions[selectedIndex]);
+                    //GUI.FocusControl(menuOptions[selectedIndex]);
                     
 
                     break;
@@ -385,23 +391,23 @@ namespace AirStrikeKit
                     { 
                     Restart.SetActive(false);
                         }
-                    GUI.skin.label.alignment = TextAnchor.MiddleCenter;
-				GUI.Label (new Rect (0, Screen.height / 2 + 10, Screen.width, 30), "Pause");
+                   // GUI.skin.label.alignment = TextAnchor.MiddleCenter;
+				//GUI.Label (new Rect (0, Screen.height / 2 + 10, Screen.width, 30), "Pause");
 				if (musicpaused == false) {
 					musicScript.pauseMusic ();
 					musicpaused = true;
 				}
 
 		
-				GUI.DrawTexture (new Rect (Screen.width / 2 - Logo.width / 2, Screen.height / 2 - 150, Logo.width, Logo.height), Logo);
-                    GUI.SetNextControlName("Resume");
+				//GUI.DrawTexture (new Rect (Screen.width / 2 - Logo.width / 2, Screen.height / 2 - 150, Logo.width, Logo.height), Logo);
+                    //GUI.SetNextControlName("Resume");
 				if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 50, 300, 40), "Resume")) {
 					Mode = 0;
 					Time.timeScale = 1;
 					musicScript.resumeMusic ();
 					musicpaused = false;
 				}
-                    GUI.SetNextControlName("Main menu");
+                    //GUI.SetNextControlName("Main menu");
 				if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 100, 300, 40), "Main menu")) {
 					Time.timeScale = 1;
 					Mode = 0;
@@ -425,7 +431,7 @@ namespace AirStrikeKit
                         ReResume.OnDeselect(null);
                         ReMainMenu.OnSelect(null);
                     }
-                    GUI.FocusControl(menuOptions[selectedIndex]);
+                    //GUI.FocusControl(menuOptions[selectedIndex]);
 				break;
 			
 			}
